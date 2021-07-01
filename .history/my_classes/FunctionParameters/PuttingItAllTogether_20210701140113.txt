@@ -1,0 +1,26 @@
+        Recap
+
+            positional arguments                            keyword-only arguments
+
+        specific    may have default values             after positional arguments have been exhausted
+
+
+        *args       collects and exhausts               specific        may have fefault values
+                    remaining positional
+                    arguments
+
+
+        *           indicates the end of                **kwargs        collects any remaining
+                    positional arguments                                keyword arguments
+                    (effectively exhausts)
+
+            scoops up any
+        additional positional
+
+a, b, c=10                  *args / *
+    |
+    |
+positional parameters
+can have default values
+non-defaulted params are
+mandatory args

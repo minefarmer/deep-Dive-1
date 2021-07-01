@@ -1,0 +1,43 @@
+        Recap
+
+            positional arguments                            keyword-only arguments
+
+        specific    may have default values             after positional arguments have been exhausted
+
+
+        *args       collects and exhausts               specific        may have fefault values
+                    remaining positional
+                    arguments
+
+
+        *           indicates the end of                **kwargs        collects any remaining
+                    positional arguments                                keyword arguments
+                    (effectively exhausts)
+
+            scoops up any               indicates no more           scoops up any additional keyword args
+        additional positional args      positional args              \
+                            \         /                               \
+a, b, c=10                  *args / *       kw1, kw2=100        **kwargs
+    |                                       /           \
+    |                                      /             \
+positional parameters           specific keyword-only args\
+can have default values                                    \ can have default values
+non-defaulted params are        non-defaulted values
+mandatory args                  non-defaulted params are mandatory args
+user may specify them using     user must specify them using keywords
+keywords
+
+
+
+        Examples
+def func(a, b=10)
+
+def func (a, b, *args)
+
+def func(a, b, *args, kw1, kw2=100)
+
+def func(a, b=10, *, kw1, kw2=200)
+
+def func(a, b, *args, kw1, kw2=100, **kwargs)
+
+def func(a, b=10, *, kw1, **kw1)
