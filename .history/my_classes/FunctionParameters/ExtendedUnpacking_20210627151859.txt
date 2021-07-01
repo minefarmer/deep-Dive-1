@@ -1,0 +1,13 @@
+The use case for extended unpacking.
+
+We don't always want to unpack every single item in an iterable.
+We may, for example, want to unpack the first value, and then unpack the remaining values into another variable.
+
+l = [1, 2, 3, 4, 5, 6]
+
+We can achieve this using slicing:      a = l[0]
+                                        b = l[1:]
+
+or, using simple unpacking:             a, b = l[0], l[1:]      (aka parallel asignment)
+
+We can also use the * operator:         a, *b = l

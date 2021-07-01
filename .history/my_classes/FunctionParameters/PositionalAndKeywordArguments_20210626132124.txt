@@ -1,0 +1,23 @@
+Positional Arguments
+
+Most common way of assigning arguments to parameters: via the order in which they are passed
+i.e. their Position
+
+
+def my_func(a, b):
+    # code ...
+
+
+my_func(10, 20)  -> a = 10,  b = 20
+
+my_func(20, 10)  -> a = 20,  b = 10
+
+
+
+************************************************************************
+Default Values
+
+A positional argument can be made optional by specifying a default value for the corresponding parameter.
+
+def my_func(a, b=100):
+    # code

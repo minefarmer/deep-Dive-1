@@ -1,0 +1,7 @@
+Idendifier names are case sensitive.    my_var    are different identifiers.
+                                        my_var
+                                        ham
+                                        Ham
+
+            must follow certain rules
+                    should follow certain rules

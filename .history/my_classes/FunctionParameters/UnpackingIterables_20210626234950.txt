@@ -1,0 +1,81 @@
+        A side note on Tuples
+
+(1, 2, 3)
+
+What defines a tuple in Python, is not (), but ,
+
+1, 2, 3     is also a tuple     ->(1,2,3)       Yhe () is used to make the tuple clearer
+
+To create a Tuple with a single element:
+
+(1)     will not work as intended       -> int
+
+1,  or (1, )    -> tuple
+
+The only exception is when creating an empty tuple:       ()
+
+
+
+        Packed Values
+
+Packed values refers to values that are bundled together in some way.
+
+Tuples and lists are obvious            t = (1, 2, 3)
+                                        l = [1, 2, 3]
+
+Even a string is considered to be a packed value:       s = 'python'
+
+Sets and dictionaries are also packed values:           set1 = {1, 2, 3}
+                                                        d = {'a: 1, 'b': 2. 'c': 3}
+
+In fact, any iterable can be a packed value
+
+
+
+        Unpacking Packed values
+
+Unpacking is the act of splitting packed values into individual variables contained in a list or tuple.
+
+a, b, c = [1, 2, 3]     3 elements in [1, 2, 3]     -> need 3 variables to unpack.
+   | this is actually a tuple of three variables: a, b and c
+a = 1   b = 2   c = 3
+The unpacking into individual variables is based on the relative positions of each element.
+This is how positional arguments were assigned to parameters in a function.
+
+
+
+        Unpacking other iterables
+a, b, c = 10, 20, 'hello'
+                | this is actually a tuple with three values.
+
+a, b, c = 'XYZ'         -> a = 'X'      b = 'Y'     c = 'Z'
+
+instead of writing      a = 10      we can write    a, b = 10. 20
+                        b = 20
+
+unpacking works with any iterable type
+
+for e in 10, 20, 'hello'        -> loop returns 10, 20, 'hello'
+for e in 'XYZ'                  -> loop returns 'X', 'Y', 'Z'
+
+
+
+        Simple Application of Unpacking
+swapping values of two variables    a = 10  ->  b = 20
+                                    b = 20  ->  a = 10
+
+"traditional" approach
+tmp = a              a ---------------> 10   0x123      #  crisscross
+a = b                b ---------------> 20   0x123
+
+using unpacking
+                    this works because in Python, the entire
+                    RHS is evaluated firs and completely
+a, b = b, a
+                    then assignments are made to the LHS
+
+
+
+        Unpacking Sets and dictionaries
+d = {'key1': 1, 'key2': 2, 'key3': 3}
+for e in d          -> e iterates through the keys: 

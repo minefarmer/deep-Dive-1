@@ -1,0 +1,20 @@
+Idendifier names are case sensitive.    my_var    are different identifiers.
+                                        my_var
+                                        ham
+                                        Ham
+
+            must follow certain rules
+start with underscore (_) or letter (a-z, A-Z).
+    followed by any number of underscores (_), letters (a-z A-Z), or digits ( 0-9 )sensitive.
+        var  my_var  index1  index_1  _var --var  __lt__   are all legal names
+
+cannot be reserved words:
+    None    True    False
+    and     or      not
+    if      else    not
+    for     while   break   cntinue     pass
+    def     lambda  global  nunlocal    return  yield
+    del     in      is      assert      class
+    try     except  finally raise
+
+                    should follow certain rules

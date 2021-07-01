@@ -1,0 +1,7 @@
+## kwargs
+
+*args is used to scoop up variable amount of remaing positional arguments
+        
+
+
+

@@ -1,0 +1,2 @@
+Idendifier names are case sensitive.   my_var    are different identifiers.
+                                        
