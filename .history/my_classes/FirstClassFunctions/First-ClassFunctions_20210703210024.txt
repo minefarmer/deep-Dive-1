@@ -1,0 +1,9 @@
+            First-Class Functions
+
+can be passed to a function as an argument
+
+can be returned from a function
+
+can be assigned to a variable
+
+can be stored in a data structure (such as list, tuple, dictionary, etc.)
