@@ -94,6 +94,6 @@ no annotations		def func(x: int):  # ok		lambda x:int : x*2	# I can't do this
 single logical line of code		-> line-continuation is OK, but still just one expression
 
 lambda x: x * \		# this is ok line continuation
-	math.sin(x)
+	
 """
 

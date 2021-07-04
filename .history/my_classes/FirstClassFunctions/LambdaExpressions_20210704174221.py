@@ -91,9 +91,7 @@ no assignments		# I can't doe this: 		lambda x: x = 5		or this		lambda x: x = x 
 no annotations		def func(x: int):  # ok		lambda x:int : x*2	# I can't do this
 						return x**2
 
-single logical line of code		-> line-continuation is OK, but still just one expression
+single logical line of code		-> line-continuation is OK, but
 
-lambda x: x * \		# this is ok line continuation
-	math.sin(x)
 """
 

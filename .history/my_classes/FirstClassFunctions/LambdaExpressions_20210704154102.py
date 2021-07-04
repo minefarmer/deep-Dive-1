@@ -68,32 +68,5 @@ def apply_func(x, fn):
     return fn(x)
 
 
-# Using lambda
-
-apply_func(3, lambda x: x**2)		# 9
-
-apply_func(2, lambda x: x + 5)		# 7
-
-apply_func('abc', lambda x: x[1:] * 3)	# bcbcbc
-
-
-equivalently:
-def fn_1(x):
-    return x[1:]  # bcbcbc
-
-"""
-		Limitations
-
-The "body" of a lambda is limited to a single expression
-
-no assignments		# I can't doe this: 		lambda x: x = 5		or this		lambda x: x = x + 5
-
-no annotations		def func(x: int):  # ok		lambda x:int : x*2	# I can't do this
-						return x**2
-
-single logical line of code		-> line-continuation is OK, but still just one expression
-
-lambda x: x * \		# this is ok line continuation
-	math.sin(x)
-"""
+# 
 
