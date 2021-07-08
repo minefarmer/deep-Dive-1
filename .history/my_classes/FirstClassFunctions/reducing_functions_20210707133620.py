@@ -1,0 +1,1 @@
+"""Reducing Functions in Python"""
