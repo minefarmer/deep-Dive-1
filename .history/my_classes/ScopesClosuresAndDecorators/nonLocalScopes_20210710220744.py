@@ -74,31 +74,6 @@ def outer_func2():
     def inner_func():
         global a
         a = 'hello
-    inner_func()
 
-outer_func2()
-print(a)  # hello
-
-
-        Modifying nonlocal variables
-
-Can we modify variable defined in the outer nonlocal scope?
-
-def outer_func():
-    x = 'hello'
-
-    def inner_func():
-        x = 'python'
-
-    inner_func()
-
-    print(x)
-
-outer_func()  # hello
-
-When inner_func is complied, Python sees an assignment to x
-
-
-so it determines that x is a local variable to inner_func
-
+inner_func
 """

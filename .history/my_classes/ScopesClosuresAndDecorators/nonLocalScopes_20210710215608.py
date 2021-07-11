@@ -53,52 +53,21 @@ When inner_func is called, Python does not find a in the local(inner_func) scope
 
 So it looks for it in the enclosing scope, in this case the scope of the outer func
 
-Since it does not find it there either, it looks in the enclosing (global) scope
+Since it does not find it there
 
+Another example
 
-        Modifying global variables
-
-We saw how to use the global keyword in order to modify a global variable within a nest scope.
-
+module1.py
 a = 10
 
 def outer_func():
-    global a
-    a = 1000
+
+    def inner_func():
+    print(a)
+
+    inner_func()
 
 outer_func()
-print(a)  # 1000
-                We can of course do the same thing from within a nested function
-
-def outer_func2():
-    def inner_func():
-        global a
-        a = 'hello
-    inner_func()
-
-outer_func2()
-print(a)  # hello
-
-
-        Modifying nonlocal variables
-
-Can we modify variable defined in the outer nonlocal scope?
-
-def outer_func():
-    x = 'hello'
-
-    def inner_func():
-        x = 'python'
-
-    inner_func()
-
-    print(x)
-
-outer_func()  # hello
-
-When inner_func is complied, Python sees an assignment to x
-
-
-so it determines that x is a local variable to inner_func
 
 """
+

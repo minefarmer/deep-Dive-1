@@ -96,9 +96,6 @@ def outer_func():
 
 outer_func()  # hello
 
-When inner_func is complied, Python sees an assignment to x
-
-
-so it determines that x is a local variable to inner_func
+When inner_func is complied, Python sees an assigned
 
 """
