@@ -119,26 +119,21 @@ from functools import wraps
 
 """
 
-def counter(fn):                            # @counter
-    count = 0                               # def mult(a:int, b:int, c:int=1):
+def counter(fn):                            @counter
+    count = 0                               def mult(a:int, b:int, c:int=1):
     def inner(**args, **kwargs):
         nonlocal count                      # returns the product of three values
         count += 1
-        print(count)                        # return a * b * c
+        print(count)                        
         return fn(*args, **kwargs)
     inner = wraps(fn)(inner)
     return inner
 
 
-# help(mult)    Help on function mult in module __main__:
-                    mult(a:int, b:int, c:int=1)
-                        returns the product of three values
 
-# and introspection using the inspect module works as expected:
 
-# inspect.signature(multi)      # <Signature (a:int, b:int, c:int=1)
 
-# I don't have to use @wraps, but it will make debugging easier
+
 
 
                                 The same thing:
@@ -152,6 +147,5 @@ def counter(fn):                            # @counter
                                                         return fn(*args, **kwargs)
                                                     inner = wraps(fn)(inner)
                                                     return inner
-
 
 

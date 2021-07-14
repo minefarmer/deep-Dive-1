@@ -99,7 +99,7 @@ def counter(fn):
     def inner(*args, **kwargs):
         nonlocal count
         count += 1
-        print*'Function {0} was called {1} times'.format(fn.__name__, count)
+        print*'unction {0} was called {1} times'.format(fn.__name__, count)
         return fn(*args, **kwargs)
     inner.__name__ = fn.__name__        # these two have been added in to change the function
     inner.doc__ = fn.__doc__            # these two have been added in to change the function
@@ -110,48 +110,5 @@ But this doesn't fix losing the function signature - doing so would be quite com
 
 
         The functools.wraps function
-The functools module has a wraps function that we can use to fix the metadata of our inner function in our decorator
-
-from functools import wraps
-    in fact, the wraps function is itself a decorator
-        but, it needs to know what was our 'original' function-in this case fn
-
 
 """
-
-def counter(fn):                            # @counter
-    count = 0                               # def mult(a:int, b:int, c:int=1):
-    def inner(**args, **kwargs):
-        nonlocal count                      # returns the product of three values
-        count += 1
-        print(count)                        # return a * b * c
-        return fn(*args, **kwargs)
-    inner = wraps(fn)(inner)
-    return inner
-
-
-# help(mult)    Help on function mult in module __main__:
-                    mult(a:int, b:int, c:int=1)
-                        returns the product of three values
-
-# and introspection using the inspect module works as expected:
-
-# inspect.signature(multi)      # <Signature (a:int, b:int, c:int=1)
-
-# I don't have to use @wraps, but it will make debugging easier
-
-
-                                The same thing:
-                                                def counter(fn):
-                                                    count = 0
-                                                    @warps(fn)
-                                                    def inner(**args, **kwargs):
-                                                        nonlocal count
-                                                        count += 1
-                                                        print(count)
-                                                        return fn(*args, **kwargs)
-                                                    inner = wraps(fn)(inner)
-                                                    return inner
-
-
-

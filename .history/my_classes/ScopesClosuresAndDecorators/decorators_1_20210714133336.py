@@ -136,9 +136,7 @@ def counter(fn):                            # @counter
 
 # and introspection using the inspect module works as expected:
 
-# inspect.signature(multi)      # <Signature (a:int, b:int, c:int=1)
-
-# I don't have to use @wraps, but it will make debugging easier
+# inspect.signature(multi)      # <Signature (a:)
 
 
                                 The same thing:

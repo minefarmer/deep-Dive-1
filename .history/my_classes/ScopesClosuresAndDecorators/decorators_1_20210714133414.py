@@ -138,7 +138,7 @@ def counter(fn):                            # @counter
 
 # inspect.signature(multi)      # <Signature (a:int, b:int, c:int=1)
 
-# I don't have to use @wraps, but it will make debugging easier
+
 
 
                                 The same thing:

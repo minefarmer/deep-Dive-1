@@ -134,11 +134,9 @@ def counter(fn):                            # @counter
                     mult(a:int, b:int, c:int=1)
                         returns the product of three values
 
-# and introspection using the inspect module works as expected:
+# and introspection using the inspect
 
-# inspect.signature(multi)      # <Signature (a:int, b:int, c:int=1)
 
-# I don't have to use @wraps, but it will make debugging easier
 
 
                                 The same thing:
