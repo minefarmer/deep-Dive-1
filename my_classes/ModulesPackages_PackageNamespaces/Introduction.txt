@@ -1,0 +1,37 @@
+            Modules, Packages and Namespaces
+        Modules
+What are modules exactly?   -> objects of type ModuleType
+How does python load modules?
+How to import without the import statement
+Reloading Modules        -> why we should not do it.
+Import variants          -> import
+                            from ... import ...
+                            from ... import *
+Misconceptions
+
+
+
+__main__        # dunder main
+
+            in modules
+
+            as file names
+
+
+Zip archives
+    importing from a zip archive
+
+
+
+
+        Packages
+What is a Package
+Why use them
+How is it different from a module
+
+
+
+        Implicit Namespace Packages     (Python3.8+)
+What are they?
+How do we create and use them?
+vs standard Packages
