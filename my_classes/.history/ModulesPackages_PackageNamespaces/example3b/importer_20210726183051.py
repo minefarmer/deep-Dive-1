@@ -3,6 +3,7 @@ import os.path
 import types
 import sys
 
+def import_
 module_name = 'module1'
 module_file = 'module_source.py'
 module_path = '.'

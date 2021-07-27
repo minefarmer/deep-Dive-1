@@ -22,7 +22,7 @@ mod.__file__ = module_abs_file_path
 sys.modules[module_name] = mod
 
 # compile source_code
-# code = compile(source_code, filename=module_abs_file_path, mode='exec')
+code = compile(source_code, filename=module_abs_file_path, mode='exec')
 
 # execute compiled source code
 exec(code, mod.__dict__)
