@@ -1,1 +1,0 @@
-"""                     Global and local Scopes"""

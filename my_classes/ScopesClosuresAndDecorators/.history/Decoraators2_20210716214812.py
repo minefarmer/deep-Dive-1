@@ -1,5 +1,0 @@
-"""         Decorator Parametors
-
-
-
-"""

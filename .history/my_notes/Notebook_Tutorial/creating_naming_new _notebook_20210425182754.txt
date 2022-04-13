@@ -1,9 +1,0 @@
-Creatin and naming a new Jupyter Notebook
-
-1. In the Jupyter Home page click on "new" dropdown
-2. Select Python 3
-3. A new untitled Notebook will appear.
-Click on the "untitled" text.
-Rename the Jupyter Notebook.
-
-

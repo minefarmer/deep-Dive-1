@@ -1,4 +1,0 @@
-"""Reducing Function Arguments
-
-"""
-

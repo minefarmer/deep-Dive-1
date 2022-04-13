@@ -1,7 +1,0 @@
-The use case for extended unpacking.
-
-We don't always want to unpack every single item in an iterable.
-We may, for example, want to unpack the first value, and then unpack the remaining values into another variable.
-
-l = [1, 2, 3, 4, 5, 6]
-

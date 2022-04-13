@@ -1,5 +1,0 @@
-""" Tuple as Data Structure 
-
-
-
-"""

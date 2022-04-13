@@ -1,1 +1,0 @@
-Hello: In lesson 12 at the 4:08 point I get:

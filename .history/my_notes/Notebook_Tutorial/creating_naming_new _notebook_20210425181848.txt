@@ -1,3 +1,0 @@
-Creatin and naming a new Jupyter Notebook
-
-1. In the Jupyter Home 

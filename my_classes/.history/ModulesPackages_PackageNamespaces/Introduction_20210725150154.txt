@@ -1,4 +1,0 @@
-            Modules, Packages and Namespaces
-    Modules
-What are modules exactly?   -> objects of type ModuleType
-How does python load modules

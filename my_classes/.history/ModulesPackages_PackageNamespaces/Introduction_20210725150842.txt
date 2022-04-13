@@ -1,8 +1,0 @@
-            Modules, Packages and Namespaces
-    Modules
-What are modules exactly?   -> objects of type ModuleType
-How does python load modules?
-How to import without the import statement
-Reloading Modules       -> why we should not do it.
-Import variants         -> import
-                            

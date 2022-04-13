@@ -1,9 +1,0 @@
-"""[Semantics!]
-
-def my_func(a, b):
-    # code here             In this context, a and b are called parameters of my_func
-                            Also note that a and b are variables, local to my_func
-
-
-"""
-

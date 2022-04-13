@@ -1,1 +1,0 @@
-Idendifier names are case sensitive.  

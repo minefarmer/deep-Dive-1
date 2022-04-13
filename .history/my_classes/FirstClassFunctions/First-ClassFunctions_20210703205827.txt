@@ -1,4 +1,0 @@
-            First-Class Functions
-
-can be passed to a function as an argument
-

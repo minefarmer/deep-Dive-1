@@ -1,5 +1,0 @@
-"""         Callables
-
-What are callables?
-
-"""

@@ -1,4 +1,0 @@
-"""Scopes, Closures and Decotations
-
-
-"""

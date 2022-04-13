@@ -1,7 +1,0 @@
-        A side note on Tuples
-
-(1, 2, 3)
-
-What dwfines a tuple in Python, is not (), but ,
-
-1, 2, 3     is also a tuple     ->(1,2,3)

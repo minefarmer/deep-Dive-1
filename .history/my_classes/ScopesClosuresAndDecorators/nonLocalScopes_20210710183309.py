@@ -1,3 +1,0 @@
-"""             NonLocal Scopes
-
-"""

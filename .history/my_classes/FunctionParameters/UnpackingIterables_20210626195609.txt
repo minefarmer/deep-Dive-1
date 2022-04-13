@@ -1,3 +1,0 @@
-        A side note on Tuples
-
-(1, 2, 3)

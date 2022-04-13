@@ -1,4 +1,0 @@
-"""The operator module
-        
-
-"""

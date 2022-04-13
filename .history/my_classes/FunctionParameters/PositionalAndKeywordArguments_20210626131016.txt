@@ -1,8 +1,0 @@
-Positional Arguments
-
-Most common way of assigning arguments to parameters: via the order in which they are passed
-i.e. their Position
-
-
-def my_func(a, b):
-    # code ...

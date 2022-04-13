@@ -1,5 +1,0 @@
-"""             NonLocal Scopes
-        Inner Functions
-
-
-"""
