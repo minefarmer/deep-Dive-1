@@ -1,0 +1,19 @@
+                Collections
+
+    Sequences                   Sets                        Mappings
+Mutable     Immutable       Mutable     Immutable           Dictionaries
+Lists       Tuples          Sets        Frozen Sets     
+            Strings
+
+
+
+
+        Callables                               Singletons
+
+User-Defined Functions                          None
+Generators                                      NotImplemented
+Classes                                         Ellipsis (...)
+Instance Methods
+Class Instances (__call__())
+Built-in Functions (e.g. len(), open())
+Built-in Methods (e.g.my_list.append(x))
