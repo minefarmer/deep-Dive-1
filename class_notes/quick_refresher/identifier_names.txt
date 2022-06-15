@@ -1,0 +1,74 @@
+                VARIABLE NAMES
+
+        Identifier names
+
+are case-sensitive  my_var    are differient identifiers
+                    my_Var
+                    ham
+                    Ham
+
+
+        must follow certain rules
+
+    Must
+
+start with underscore ( _ ) or letter ( a-z A-Z)
+    followed by any number of underscores ( _ ), or letter ( a-z A-Z), or digits (0-9)
+        var     my_var    index1    index_1    _var    __var    __lt__    are all legal names
+
+cannot be reserved words:
+    None    True     False
+    and     or       not
+    if      else     elif
+    for     while    break    continue    pass
+    def     lambda   globl    nonlocal    return    yield
+    del     in       is       assert      class
+    try     except   finally  raise 
+    import  from     with     as
+
+
+
+
+        should follow certain conventions
+conventions
+
+_my_var         This is a convention to indicate "internal use" or "private" objects
+|
+|_____single underscore      Objects named this way will not be imported by a statement such as:
+                             from module import *
+
+
+__my_var      Used to "mangle" class attributes- useful in inheritance chains 
+ |
+ |____double underscore
+
+
+__my_var__      Used for system-defined names that have a special meaning to the interpreter. 
+ |       |
+ |       |
+ |___ double underscore    Don't invent them, stick to the ones pre-defined by Python!
+
+                            __init__
+
+                            x < y   ------  x.__lt__(y)
+
+
+        Other naming Conventions
+
+Packages    short, all-lowercase names. Preferably no underscores.          utilities
+
+Modules     ssort, all-lowercase names. Can  have underscores.              db_utils    dbutils
+
+Classes     Capwords (upper camel case) convention                         BankAccount 
+
+Functions   lowercase, words separated by underscores (snake_case)         open_account
+
+Constants   all)uppercase, words separated by underscores                  MIN_APR  
+
+
+https://www.python.org/dev/peps/pep-0008/   <------- This is a should read!
+
+
+    A foolish consistancy is the hobgoblin of little minds.
+                                                        (Emerson)
+
