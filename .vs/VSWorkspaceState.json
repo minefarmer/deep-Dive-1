@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\class_notes",
+    "\\class_notes\\quick_refresher"
   ],
-  "SelectedNode": "\\class_notes",
+  "SelectedNode": "\\class_notes\\quick_refresher\\multi-line_statements_strings.ipynb",
   "PreviewInSolutionExplorer": true
 }
