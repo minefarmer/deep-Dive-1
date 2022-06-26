@@ -1,0 +1,14 @@
+                    Variables
+
+memory references
+    what variables really are.
+        memory management.
+            reference management
+                reference counting      garbage collection
+                    dynamic vs static typing   vs other languages
+                        mutablity and inmutability
+                            shared references
+                                variable equality
+                                    everything is an object 
+
+
