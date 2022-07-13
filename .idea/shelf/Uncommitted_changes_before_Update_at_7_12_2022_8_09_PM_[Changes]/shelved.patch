@@ -1,0 +1,1154 @@
+Index: class_notes/quick_refresher/.ipynb_checkpoints/multi-line_statements_strings-checkpoint.ipynb
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n \"cells\": [\r\n  {\r\n   \"cell_type\": \"markdown\",\r\n   \"id\": \"2496344e\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"# Multi-line_statements_strings\\n\"\r\n   ]\r\n  }\r\n ],\r\n \"metadata\": {\r\n  \"kernelspec\": {\r\n   \"display_name\": \"Python 3 (ipykernel)\",\r\n   \"language\": \"python\",\r\n   \"name\": \"python3\"\r\n  },\r\n  \"language_info\": {\r\n   \"codemirror_mode\": {\r\n    \"name\": \"ipython\",\r\n    \"version\": 3\r\n   },\r\n   \"file_extension\": \".py\",\r\n   \"mimetype\": \"text/x-python\",\r\n   \"name\": \"python\",\r\n   \"nbconvert_exporter\": \"python\",\r\n   \"pygments_lexer\": \"ipython3\",\r\n   \"version\": \"3.9.7\"\r\n  }\r\n },\r\n \"nbformat\": 4,\r\n \"nbformat_minor\": 5\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/class_notes/quick_refresher/.ipynb_checkpoints/multi-line_statements_strings-checkpoint.ipynb b/class_notes/quick_refresher/.ipynb_checkpoints/multi-line_statements_strings-checkpoint.ipynb
+--- a/class_notes/quick_refresher/.ipynb_checkpoints/multi-line_statements_strings-checkpoint.ipynb	(revision 6bbf018d1c620affa383fc338bec715f22d7712e)
++++ b/class_notes/quick_refresher/.ipynb_checkpoints/multi-line_statements_strings-checkpoint.ipynb	(date 1656476831395)
+@@ -7,6 +7,552 @@
+    "source": [
+     "# Multi-line_statements_strings\n"
+    ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": 39,
++   "id": "02a7e2d8",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "a = [1, 2, 3]"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": 40,
++   "id": "dd59461a",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "a = [1, 2,\n",
++    "     3, 4, 5]"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": 41,
++   "id": "7039317b",
++   "metadata": {},
++   "outputs": [
++    {
++     "data": {
++      "text/plain": [
++       "[1, 2, 3, 4, 5]"
++      ]
++     },
++     "execution_count": 41,
++     "metadata": {},
++     "output_type": "execute_result"
++    }
++   ],
++   "source": [
++    "a"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": 42,
++   "id": "ff5ddd30",
++   "metadata": {},
++   "outputs": [
++    {
++     "ename": "SyntaxError",
++     "evalue": "invalid syntax (4222804060.py, line 2)",
++     "output_type": "error",
++     "traceback": [
++      "\u001b[1;36m  Input \u001b[1;32mIn [42]\u001b[1;36m\u001b[0m\n\u001b[1;33m    2]\u001b[0m\n\u001b[1;37m    ^\u001b[0m\n\u001b[1;31mSyntaxError\u001b[0m\u001b[1;31m:\u001b[0m invalid syntax\n"
++     ]
++    }
++   ],
++   "source": [
++    "a = [1 #item 1,\n",
++    "    2]"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "458f0036",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "a = [1, #item 1\n",
++    "    2]"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "1423f02f",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "a = [1 #item 1\n",
++    "    ,2]"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "f03ae34c",
++   "metadata": {},
++   "outputs": [
++    {
++     "data": {
++      "text/plain": [
++       "[1, 2]"
++      ]
++     },
++     "execution_count": 8,
++     "metadata": {},
++     "output_type": "execute_result"
++    }
++   ],
++   "source": [
++    "a"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "0125677d",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "a = (1 # comment\n",
++    "    ,2 # comment\n",
++    "    ,3)"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "3afaf4c4",
++   "metadata": {},
++   "outputs": [
++    {
++     "data": {
++      "text/plain": [
++       "(1, 2, 3)"
++      ]
++     },
++     "execution_count": 11,
++     "metadata": {},
++     "output_type": "execute_result"
++    }
++   ],
++   "source": [
++    "a"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "f8288ef1",
++   "metadata": {},
++   "outputs": [
++    {
++     "ename": "SyntaxError",
++     "evalue": "unexpected EOF while parsing (445148337.py, line 2)",
++     "output_type": "error",
++     "traceback": [
++      "\u001b[1;36m  Input \u001b[1;32mIn [12]\u001b[1;36m\u001b[0m\n\u001b[1;33m    ,'key2': 2  # value for key 2}\u001b[0m\n\u001b[1;37m                                  ^\u001b[0m\n\u001b[1;31mSyntaxError\u001b[0m\u001b[1;31m:\u001b[0m unexpected EOF while parsing\n"
++     ]
++    }
++   ],
++   "source": [
++    "a = {'key1': 1 # value for key 1\n",
++    "    ,'key2': 2  # value for key 2}"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "eeaef312",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "a = {'key1': 1 # value for key 1\n",
++    "    ,'key2': 2  # value for key 2\n",
++    "    }"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "360d44fa",
++   "metadata": {},
++   "outputs": [
++    {
++     "data": {
++      "text/plain": [
++       "{'key1': 1, 'key2': 2}"
++      ]
++     },
++     "execution_count": 14,
++     "metadata": {},
++     "output_type": "execute_result"
++    }
++   ],
++   "source": [
++    "a"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "b52eb58c",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "def my_func(a, # this is used to indicate...\n",
++    "            b,  # comment\n",
++    "            c):  \n",
++    "    print(a,b,c)"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "955e3e5f",
++   "metadata": {},
++   "outputs": [
++    {
++     "name": "stdout",
++     "output_type": "stream",
++     "text": [
++      "10 20 30\n"
++     ]
++    }
++   ],
++   "source": [
++    "my_func(10, 20, 30)"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "d20f2e88",
++   "metadata": {},
++   "outputs": [
++    {
++     "name": "stdout",
++     "output_type": "stream",
++     "text": [
++      "10 20 30\n"
++     ]
++    }
++   ],
++   "source": [
++    "my_func(10,\n",
++    "        20, \n",
++    "        30)"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "efe555a3",
++   "metadata": {},
++   "outputs": [
++    {
++     "name": "stdout",
++     "output_type": "stream",
++     "text": [
++      "10 20 30\n"
++     ]
++    }
++   ],
++   "source": [
++    "my_func(10, # comment\n",
++    "        20, # comment\n",
++    "        30)"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "9b7da40a",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "a = 10\n",
++    "b = 20\n",
++    "c = 30"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "a492ed3f",
++   "metadata": {},
++   "outputs": [
++    {
++     "name": "stdout",
++     "output_type": "stream",
++     "text": [
++      "yes\n"
++     ]
++    }
++   ],
++   "source": [
++    "if a > 5 and b > 10 and c > 20:\n",
++    "    print('yes')"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "e995a553",
++   "metadata": {},
++   "outputs": [
++    {
++     "name": "stdout",
++     "output_type": "stream",
++     "text": [
++      "yes\n"
++     ]
++    }
++   ],
++   "source": [
++    "if a > 5 \\\n",
++    "and b > 10 \\\n",
++    "and c > 20:\n",
++    "    print('yes')"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "8ee84020",
++   "metadata": {},
++   "outputs": [
++    {
++     "name": "stdout",
++     "output_type": "stream",
++     "text": [
++      "yes\n"
++     ]
++    }
++   ],
++   "source": [
++    "if a > 5 \\\n",
++    "    and b > 10 \\\n",
++    "        and c > 20:\n",
++    "    print('yes')"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "786de34c",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "a = ''' this is a string '''"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "2ef26332",
++   "metadata": {},
++   "outputs": [
++    {
++     "data": {
++      "text/plain": [
++       "' this is a string '"
++      ]
++     },
++     "execution_count": 15,
++     "metadata": {},
++     "output_type": "execute_result"
++    }
++   ],
++   "source": [
++    "a"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "0dea3b64",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "a = \"\"\"this\n",
++    "is a string\"\"\""
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "9528dbd6",
++   "metadata": {},
++   "outputs": [
++    {
++     "data": {
++      "text/plain": [
++       "'this\\nis a string'"
++      ]
++     },
++     "execution_count": 21,
++     "metadata": {},
++     "output_type": "execute_result"
++    }
++   ],
++   "source": [
++    "a"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "c4c96255",
++   "metadata": {},
++   "outputs": [
++    {
++     "name": "stdout",
++     "output_type": "stream",
++     "text": [
++      "this\n",
++      "is a string\n"
++     ]
++    }
++   ],
++   "source": [
++    "print(a)"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "48a81095",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "a = ''' this\n",
++    "    is a string\n",
++    "        that is created over multiple lines'''"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "4f29be30",
++   "metadata": {},
++   "outputs": [
++    {
++     "data": {
++      "text/plain": [
++       "' this\\n    is a string\\n        that is created over multiple lines'"
++      ]
++     },
++     "execution_count": 25,
++     "metadata": {},
++     "output_type": "execute_result"
++    }
++   ],
++   "source": [
++    "a"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "c1925614",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "a = '''some items:\n",
++    "        1. item 1\n",
++    "        2. item 2'''"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "89666a63",
++   "metadata": {},
++   "outputs": [
++    {
++     "name": "stdout",
++     "output_type": "stream",
++     "text": [
++      "some items:\n",
++      "        1. item 1\n",
++      "        2. item 2\n"
++     ]
++    }
++   ],
++   "source": [
++    "print(a)"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "348c8408",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "def my_func():\n",
++    "    a = '''a multi-line string \n",
++    "    that is indented in the second line'''\n",
++    "    return a"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "249fc43a",
++   "metadata": {},
++   "outputs": [
++    {
++     "name": "stdout",
++     "output_type": "stream",
++     "text": [
++      "a multi-line string \n",
++      "    that is indented in the second line\n"
++     ]
++    }
++   ],
++   "source": [
++    "print(my_func())"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "4c6fbadf",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "def my_func():\n",
++    "    a = '''a multi-line string \n",
++    "that is indented in the second line'''\n",
++    "    return a"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "ee0ed945",
++   "metadata": {},
++   "outputs": [
++    {
++     "name": "stdout",
++     "output_type": "stream",
++     "text": [
++      "a multi-line string \n",
++      "that is indented in the second line\n"
++     ]
++    }
++   ],
++   "source": [
++    "print(my_func())"
++   ]
+   }
+  ],
+  "metadata": {
+@@ -25,7 +571,12 @@
+    "name": "python",
+    "nbconvert_exporter": "python",
+    "pygments_lexer": "ipython3",
+-   "version": "3.9.7"
++   "version": "3.9.12"
++  },
++  "vscode": {
++   "interpreter": {
++    "hash": "ade0c43015c1571a0e966fe63d6ca9bc6f881f818ef80fb3cfba28dcf27f6d81"
++   }
+   }
+  },
+  "nbformat": 4,
+Index: class_notes/quick_refresher/multi-line_statements_strings.ipynb
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n \"cells\": [\r\n  {\r\n   \"cell_type\": \"markdown\",\r\n   \"id\": \"2496344e\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"# Multi-line_statements_strings\\n\"\r\n   ]\r\n  }\r\n ],\r\n \"metadata\": {\r\n  \"kernelspec\": {\r\n   \"display_name\": \"Python 3 (ipykernel)\",\r\n   \"language\": \"python\",\r\n   \"name\": \"python3\"\r\n  },\r\n  \"language_info\": {\r\n   \"codemirror_mode\": {\r\n    \"name\": \"ipython\",\r\n    \"version\": 3\r\n   },\r\n   \"file_extension\": \".py\",\r\n   \"mimetype\": \"text/x-python\",\r\n   \"name\": \"python\",\r\n   \"nbconvert_exporter\": \"python\",\r\n   \"pygments_lexer\": \"ipython3\",\r\n   \"version\": \"3.9.7\"\r\n  }\r\n },\r\n \"nbformat\": 4,\r\n \"nbformat_minor\": 5\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/class_notes/quick_refresher/multi-line_statements_strings.ipynb b/class_notes/quick_refresher/multi-line_statements_strings.ipynb
+--- a/class_notes/quick_refresher/multi-line_statements_strings.ipynb	(revision 6bbf018d1c620affa383fc338bec715f22d7712e)
++++ b/class_notes/quick_refresher/multi-line_statements_strings.ipynb	(date 1656476831400)
+@@ -7,6 +7,552 @@
+    "source": [
+     "# Multi-line_statements_strings\n"
+    ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": 39,
++   "id": "02a7e2d8",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "a = [1, 2, 3]"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": 40,
++   "id": "dd59461a",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "a = [1, 2,\n",
++    "     3, 4, 5]"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": 41,
++   "id": "7039317b",
++   "metadata": {},
++   "outputs": [
++    {
++     "data": {
++      "text/plain": [
++       "[1, 2, 3, 4, 5]"
++      ]
++     },
++     "execution_count": 41,
++     "metadata": {},
++     "output_type": "execute_result"
++    }
++   ],
++   "source": [
++    "a"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": 42,
++   "id": "ff5ddd30",
++   "metadata": {},
++   "outputs": [
++    {
++     "ename": "SyntaxError",
++     "evalue": "invalid syntax (4222804060.py, line 2)",
++     "output_type": "error",
++     "traceback": [
++      "\u001b[1;36m  Input \u001b[1;32mIn [42]\u001b[1;36m\u001b[0m\n\u001b[1;33m    2]\u001b[0m\n\u001b[1;37m    ^\u001b[0m\n\u001b[1;31mSyntaxError\u001b[0m\u001b[1;31m:\u001b[0m invalid syntax\n"
++     ]
++    }
++   ],
++   "source": [
++    "a = [1 #item 1,\n",
++    "    2]"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "458f0036",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "a = [1, #item 1\n",
++    "    2]"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "1423f02f",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "a = [1 #item 1\n",
++    "    ,2]"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "f03ae34c",
++   "metadata": {},
++   "outputs": [
++    {
++     "data": {
++      "text/plain": [
++       "[1, 2]"
++      ]
++     },
++     "execution_count": 8,
++     "metadata": {},
++     "output_type": "execute_result"
++    }
++   ],
++   "source": [
++    "a"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "0125677d",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "a = (1 # comment\n",
++    "    ,2 # comment\n",
++    "    ,3)"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "3afaf4c4",
++   "metadata": {},
++   "outputs": [
++    {
++     "data": {
++      "text/plain": [
++       "(1, 2, 3)"
++      ]
++     },
++     "execution_count": 11,
++     "metadata": {},
++     "output_type": "execute_result"
++    }
++   ],
++   "source": [
++    "a"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "f8288ef1",
++   "metadata": {},
++   "outputs": [
++    {
++     "ename": "SyntaxError",
++     "evalue": "unexpected EOF while parsing (445148337.py, line 2)",
++     "output_type": "error",
++     "traceback": [
++      "\u001b[1;36m  Input \u001b[1;32mIn [12]\u001b[1;36m\u001b[0m\n\u001b[1;33m    ,'key2': 2  # value for key 2}\u001b[0m\n\u001b[1;37m                                  ^\u001b[0m\n\u001b[1;31mSyntaxError\u001b[0m\u001b[1;31m:\u001b[0m unexpected EOF while parsing\n"
++     ]
++    }
++   ],
++   "source": [
++    "a = {'key1': 1 # value for key 1\n",
++    "    ,'key2': 2  # value for key 2}"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "eeaef312",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "a = {'key1': 1 # value for key 1\n",
++    "    ,'key2': 2  # value for key 2\n",
++    "    }"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "360d44fa",
++   "metadata": {},
++   "outputs": [
++    {
++     "data": {
++      "text/plain": [
++       "{'key1': 1, 'key2': 2}"
++      ]
++     },
++     "execution_count": 14,
++     "metadata": {},
++     "output_type": "execute_result"
++    }
++   ],
++   "source": [
++    "a"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "b52eb58c",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "def my_func(a, # this is used to indicate...\n",
++    "            b,  # comment\n",
++    "            c):  \n",
++    "    print(a,b,c)"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "955e3e5f",
++   "metadata": {},
++   "outputs": [
++    {
++     "name": "stdout",
++     "output_type": "stream",
++     "text": [
++      "10 20 30\n"
++     ]
++    }
++   ],
++   "source": [
++    "my_func(10, 20, 30)"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "d20f2e88",
++   "metadata": {},
++   "outputs": [
++    {
++     "name": "stdout",
++     "output_type": "stream",
++     "text": [
++      "10 20 30\n"
++     ]
++    }
++   ],
++   "source": [
++    "my_func(10,\n",
++    "        20, \n",
++    "        30)"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "efe555a3",
++   "metadata": {},
++   "outputs": [
++    {
++     "name": "stdout",
++     "output_type": "stream",
++     "text": [
++      "10 20 30\n"
++     ]
++    }
++   ],
++   "source": [
++    "my_func(10, # comment\n",
++    "        20, # comment\n",
++    "        30)"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "9b7da40a",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "a = 10\n",
++    "b = 20\n",
++    "c = 30"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "a492ed3f",
++   "metadata": {},
++   "outputs": [
++    {
++     "name": "stdout",
++     "output_type": "stream",
++     "text": [
++      "yes\n"
++     ]
++    }
++   ],
++   "source": [
++    "if a > 5 and b > 10 and c > 20:\n",
++    "    print('yes')"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "e995a553",
++   "metadata": {},
++   "outputs": [
++    {
++     "name": "stdout",
++     "output_type": "stream",
++     "text": [
++      "yes\n"
++     ]
++    }
++   ],
++   "source": [
++    "if a > 5 \\\n",
++    "and b > 10 \\\n",
++    "and c > 20:\n",
++    "    print('yes')"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "8ee84020",
++   "metadata": {},
++   "outputs": [
++    {
++     "name": "stdout",
++     "output_type": "stream",
++     "text": [
++      "yes\n"
++     ]
++    }
++   ],
++   "source": [
++    "if a > 5 \\\n",
++    "    and b > 10 \\\n",
++    "        and c > 20:\n",
++    "    print('yes')"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "786de34c",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "a = ''' this is a string '''"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "2ef26332",
++   "metadata": {},
++   "outputs": [
++    {
++     "data": {
++      "text/plain": [
++       "' this is a string '"
++      ]
++     },
++     "execution_count": 15,
++     "metadata": {},
++     "output_type": "execute_result"
++    }
++   ],
++   "source": [
++    "a"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "0dea3b64",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "a = \"\"\"this\n",
++    "is a string\"\"\""
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "9528dbd6",
++   "metadata": {},
++   "outputs": [
++    {
++     "data": {
++      "text/plain": [
++       "'this\\nis a string'"
++      ]
++     },
++     "execution_count": 21,
++     "metadata": {},
++     "output_type": "execute_result"
++    }
++   ],
++   "source": [
++    "a"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "c4c96255",
++   "metadata": {},
++   "outputs": [
++    {
++     "name": "stdout",
++     "output_type": "stream",
++     "text": [
++      "this\n",
++      "is a string\n"
++     ]
++    }
++   ],
++   "source": [
++    "print(a)"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "48a81095",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "a = ''' this\n",
++    "    is a string\n",
++    "        that is created over multiple lines'''"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "4f29be30",
++   "metadata": {},
++   "outputs": [
++    {
++     "data": {
++      "text/plain": [
++       "' this\\n    is a string\\n        that is created over multiple lines'"
++      ]
++     },
++     "execution_count": 25,
++     "metadata": {},
++     "output_type": "execute_result"
++    }
++   ],
++   "source": [
++    "a"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "c1925614",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "a = '''some items:\n",
++    "        1. item 1\n",
++    "        2. item 2'''"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "89666a63",
++   "metadata": {},
++   "outputs": [
++    {
++     "name": "stdout",
++     "output_type": "stream",
++     "text": [
++      "some items:\n",
++      "        1. item 1\n",
++      "        2. item 2\n"
++     ]
++    }
++   ],
++   "source": [
++    "print(a)"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "348c8408",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "def my_func():\n",
++    "    a = '''a multi-line string \n",
++    "    that is indented in the second line'''\n",
++    "    return a"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "249fc43a",
++   "metadata": {},
++   "outputs": [
++    {
++     "name": "stdout",
++     "output_type": "stream",
++     "text": [
++      "a multi-line string \n",
++      "    that is indented in the second line\n"
++     ]
++    }
++   ],
++   "source": [
++    "print(my_func())"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "4c6fbadf",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "def my_func():\n",
++    "    a = '''a multi-line string \n",
++    "that is indented in the second line'''\n",
++    "    return a"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "ee0ed945",
++   "metadata": {},
++   "outputs": [
++    {
++     "name": "stdout",
++     "output_type": "stream",
++     "text": [
++      "a multi-line string \n",
++      "that is indented in the second line\n"
++     ]
++    }
++   ],
++   "source": [
++    "print(my_func())"
++   ]
+   }
+  ],
+  "metadata": {
+@@ -25,7 +571,12 @@
+    "name": "python",
+    "nbconvert_exporter": "python",
+    "pygments_lexer": "ipython3",
+-   "version": "3.9.7"
++   "version": "3.9.12"
++  },
++  "vscode": {
++   "interpreter": {
++    "hash": "ade0c43015c1571a0e966fe63d6ca9bc6f881f818ef80fb3cfba28dcf27f6d81"
++   }
+   }
+  },
+  "nbformat": 4,

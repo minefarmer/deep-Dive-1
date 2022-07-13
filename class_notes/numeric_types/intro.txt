@@ -1,0 +1,18 @@
+'''             NUMBERS
+    Four main types of numbers:                 Python Type
+
+Boolean truth values    0(False), 1 (True)      bool
+
+Integer Numbers(Z)  0, +-1, +-2, +-3,...        int
+
+Rational Numbers(Q) {p/q|p,q E Z, q =/= 0}      fractions.Fraction
+
+Real Numbers (R)    0, -1, 0.125, 1/3, tc, ...  floats
+                                                decimal.Decimal
+
+Complex Numbers(C)  {a+ bi | a,b E R}           complex data types
+
+    Z (subset of) Q (subset of) R (subset of) C
+                     
+'''
+
