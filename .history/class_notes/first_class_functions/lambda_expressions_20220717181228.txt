@@ -1,0 +1,103 @@
+                        Lambda Expressions
+
+            What are Lambda expressions?
+
+We already know how to create functions using the def statement.
+
+Lambda expressions are simply another way to create functions.          anonymous functions
+
+keyword   parameter list -> optional   the : is required, even for zero arguments
+        \         \          /    ____/      This expression is evaluated and returned
+         \         \        /    /          /           when the lambda function is called
+         lambda [parameter list]: expression    (think of it as the "body" of the function)
+        |___________________________________|
+                        |
+        The expression returns a function object.
+        that evaluates and returns the expression when it is called.
+
+It can be assigned to a variable
+    passed as an argument to another function.
+
+It is a function, just like one created with def.
+
+
+Examples:           Note that these expressions are function objects, but are not "named"   -> anonymous functions
+
+lambda x, y:  x + y
+
+lambda : 'Hello'
+
+lambda s: s[::-1].upper()
+
+
+
+type(lambda x: x**2) => function
+                                    ****************************************************************
+
+Lambdas, or anonymous functions, are not equivalent to closures.
+
+
+
+
+*********************           Assigning a Lambda to a Variable Name           ********************************
+
+my_func = lambda x: x**2
+
+type(my_func) => function
+
+my_func(3)      -> 9
+
+my_func(4)      -> 16
+
+
+identical to:   def my_func(x):
+                    return x**2
+
+                type(my_func)  -> function
+
+                my_func(3)      -> 9
+
+                my_func(4)      -> 16
+
+
+
+
+
+
+*************************       Passing as an argument to another Function     ***************************************
+
+def apply_func(x, fn):
+    return fn(x)
+
+
+apply_func(3, lambda x: x + 5)      -> 9
+
+apply_func(2, lambda x: x + 5)      -> 7
+
+apply_func('abc, lambda x: x[1:] * 3)  -> bcbcbc
+
+
+    equivalently:
+def fn_1(x):
+    return x[1: ] * 3
+
+apply_func('abc', fn_1) -> bcbcbc
+
+
+
+
+
+********************            Limitations         *********************************************************************** 
+
+The 'body' of a lambda is limited to a single expression.
+
+no assignments are allowed      lambda x: x = 5  NO!!!!!      lambda x: x  = x = 5  NO!!!!!
+
+no annotations are allowed      def func(x: int):  Yes!!!!      lambda x:int : x*2  NO!!!!!!
+                                    return x**2
+
+
+single logical line of code      _> line-in continuation is OK, but still just one expression.
+
+lambda x: x * \
+    

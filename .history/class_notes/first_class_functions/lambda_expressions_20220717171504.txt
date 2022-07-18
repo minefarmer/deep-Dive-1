@@ -1,0 +1,34 @@
+                        Lambda Expressions
+
+            What are Lambda expressions?
+
+We already know how to create functions using the def statement.
+
+Lambda expressions are simply another way to create functions.          anonymous functions
+
+keyword   parameter list -> optional   the : is required, even for zero arguments
+        \         \          /    ____/      This expression is evaluated and returned
+         \         \        /    /          /           when the lambda function is called
+         lambda [parameter list]: expression    (think of it as the "body" of the function)
+        |___________________________________|
+                        |
+        The expression returns a function object.
+        that evaluates and returns the expression when it is called.
+
+It can be assigned to a variable
+    passed as an argument to another function.
+
+It is a function, just like one created with def.
+
+
+Examples:
+
+lambda x, y:  x + y
+
+lambda : 'Hello'
+
+lambda s: s[::-1].upper()
+
+
+
+
