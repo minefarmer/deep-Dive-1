@@ -140,10 +140,6 @@ def my_func(a: 'a string',
         or other"""
     pass
 
-for param in inspect.signature(my_func).parameters.values():
-    print("Name:', param.name)
-    print('Default:', param.default)
-    print('Annotation:', param.annotation)
-    print('Kind:', param.kind)
+
 
 

@@ -78,72 +78,10 @@ def my_func():              func is bound to my_obj, an instance of MyClass
     pass
                             isfunction(my_func) -> True
 def MyClass:
-    def func(self):         ismethod(my_func)   -> False
+    def func(self):         
         pass
-                            is function(my_obj.func)  -> False
+
 my_obj = MyClass()
-                            isroutine(my_func) -> True
 
-
-
-            Code Introspection **********************************************************************
-
-We can recover the source code of our functions/methods.
-
-inspect.getsource(my_func)      -> A string containing our entire def statement, including annotations, docstrings, etc.
-
-We can find out in which module our function was created.
-
-inspect.getsource(my_func)  -> <module '__main__'>
-
-inspect,getmodule(print)    -> <module 'builtins'  (built-in)>
-
-inspect.getmodule(math.sin) -> <module 'math'  (built-in)>
-
-
-            Function comments ********************************************************************************
-
-# setting up variable
-i = 10
-
-# TODO: Implement function\n# some additional notes'
-
-Many IDE;s support the TODO comment to flag functions and other callables.
-
-
-            Callable Signatures ***************************************************************************
-
-inspect.signature(my_func)      -> Signature Instance
-
-Contains an attribute called parameters.
-
-Essentially a dictionary of parameter names (keys). and metadata about the parameters (values).
-
-        keys -> parameter name
-        values -> object with attributes such as name, default, annotation, kind
-
-kind   POSITIONAL_OR_KEYWORD
-       VAR_POSITIONAL
-       KEYWORD_ONLY
-       VAR_KEYWORD
-       POSITIONAL_ONLY
-
-            Callable Signatuers ****************************************************************************
-
-def my_func(a: 'a string',
-            b: int = 1,
-            *args: 'additional positional args',
-            kw1: 'first keyword-only arg'.
-            kw2: 'second keyword-only arg' = 10
-            **kwargs: 'additional keyword-only args')  -> str:
-    """ does something
-        or other"""
-    pass
-
-for param in inspect.signature(my_func).parameters.values():
-    print("Name:', param.name)
-    print('Default:', param.default)
-    print('Annotation:', param.annotation)
-    print('Kind:', param.kind)
 
 

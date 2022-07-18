@@ -1,0 +1,69 @@
+                        FUNCTION INTROSPECTION
+Functions are first-class objects.
+
+They have attributes.       __doc__         __annotations__
+
+We can attach our own attributes.
+
+
+def my_func(a, b):
+    return a + b
+
+my_func.category = 'math'
+my_func.sub_category = 'arithmetic'
+
+
+print(my_func.category)         -> math
+
+print(my_func.sub_category)     -> arithmetic
+
+
+            The dir()functions    ***************************************************
+
+dir( is a built-in function that, given an objects an argument, will return a list of valid attributes for that object)
+
+
+            Function attributes:__name__, __defaults__, __kwdefaults__
+
+__name__            -> name of function
+
+__defaults__        -> Tuple containing positional parameter defaults.
+
+__kwdefaults__      -> dictionary containing positional keyword-only parameter defaults.
+
+def my_func(a, b=2, c=3, *, kw1, kw2=2):
+    pass
+
+my_func.__name__    -> my_func
+
+my_func.__defaults__ -> (2, 3)
+
+my_func.__kwdefaults__ -> {'kw2' : 2}
+
+
+            Function attribute:__code__  ***************************************************
+
+def my_func(a, b=1, *args, **kwargs):
+    i = 10
+    b = min(i, b)                    my_func.__code__
+    return a * b
+                                        -> <code object my_func at 0x00020EEF ... >
+
+
+this __code__ object itself has various properties, which include:
+
+co_varnames  parameter and local variables
+
+            my_func.__code__.co_varnames    -> ('a', 'b', 'args', 'kwargs', 'i')
+
+            parameter names first, followed by local variable names
+
+co_argcount   number of parameters
+
+            my_func.__code__.co_argcount  -> 2
+
+            does not count *args and **kwargs!
+
+
+            The inspect Module              import inspect     *****************************************
+
