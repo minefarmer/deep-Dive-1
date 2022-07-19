@@ -37,6 +37,6 @@ classes                     MyClasses(x, y, z)
 
 class instances             if the class implements __call__ method.
 
-generators, coroutines, asynchronous generators.
+gener
 
 

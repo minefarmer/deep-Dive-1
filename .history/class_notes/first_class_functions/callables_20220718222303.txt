@@ -1,0 +1,6 @@
+                WHAT ARE CALLABLES?
+
+Any object that can be called using the () operator.                callables always return a value.
+
+    like functions and methods
+

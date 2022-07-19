@@ -35,8 +35,6 @@ classes                     MyClasses(x, y, z)
                                 -> returns the new object (references)
 
 
-class instances             if the class implements __call__ method.
 
-generators, coroutines, asynchronous generators.
 
 
