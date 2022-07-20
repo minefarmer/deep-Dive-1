@@ -1,0 +1,3 @@
+                    REDUCING FUNCTIONS
+
+Reducing Functions in Python
