@@ -55,8 +55,7 @@ def my_func(a, b, c):
 a = 10
 f = partial(my_func, a)     <---  the memory address of 10 is backed in to the partial.
 
-f(20, 30)   -> 10, 20, 30
+f(20, 30)   -
 
-a = 100
 
 

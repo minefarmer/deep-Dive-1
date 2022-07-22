@@ -34,29 +34,8 @@ f = partial(my_func, 10, k1='a')   # gets the same results as the code on lines 
 def pow(base, exponent):
     return base **exponent
 
-square = partial(pow, exponent=2)
-
-square(5)   -> 25
-
-cube(5)     -> 125
-
-cube(base=5) -> 125
-
-    !! square(5, exponent=3)  -> 125
+square = partial(pow, expinet)
 
 
-            Beware **************************************************************************************
-I can use variables when creating partials.
-    but, there arises a similiar issue to argument default values.
-
-def my_func(a, b, c):
-    print(a, b, c)
-
-a = 10
-f = partial(my_func, a)     <---  the memory address of 10 is backed in to the partial.
-
-f(20, 30)   -> 10, 20, 30
-
-a = 100
 
 
