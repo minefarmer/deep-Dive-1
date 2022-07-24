@@ -1,0 +1,5 @@
+                    OPERATOR MODULE
+            Functional Equivalents to Operators
+
+
+

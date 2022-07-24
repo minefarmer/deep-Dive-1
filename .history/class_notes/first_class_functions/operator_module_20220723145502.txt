@@ -1,0 +1,12 @@
+                    OPERATOR MODULE
+            Functional Equivalents to Operators
+
+In the last lecture we wrote code such as:
+
+l = [1, 2, 3]
+reduce(lambda a, b: a * b, l)
+
+I can use a lambda expression to create a functional version of the * operator.
+
+So the operator module operator was created for peasant
+

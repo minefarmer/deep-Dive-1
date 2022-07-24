@@ -1,0 +1,76 @@
+                    OPERATOR MODULE
+            Functional Equivalents to Operators
+
+In the last lecture we wrote code such as:
+
+l = [1, 2, 3]
+reduce(lambda a, b: a * b, l)
+
+I can use a lambda expression to create a functional version of the * operator.
+
+The operator module operator was created for peasants like me.
+
+This module is a convenience module.
+
+I can always use my own functions and lambda expressions instead.  But, I ain't stupid.
+
+
+        Arithmetic functions
+add(a, b)
+mul(a, b)
+pow(a, b)
+mod(a, b)
+floordiv(a, b)
+neg(a)
+    (and many more)
+
+        Comparison and Boolean Operators
+lt(a, b)        gt(a, b)        eq(a, b)
+le(a, b)        ge(a, b)        ne(a, b)
+is_(a,b)        is_not(a,b)
+
+and_(a, b)
+or_(a, b)
+not_(a, b)
+
+
+        SEquence/Maping Operators
+conc(s1, s2)
+contains(s, val)
+countOf(s, val)
+getitem(s, i)                               # variants that use slices
+setitem(s, i, val)      # mutable objects   # variants that use slices
+delitem(s, i)           # mutable objects   # variants that use slices
+
+
+        Item getters
+The itemgetter is function return a callable
+
+getitem(s, i)   # takes two parameters, and returns a value: s[i]
+    s = [1, 2, 3]
+    getitem(s, i) -> 2
+
+itemgetter(i)   # returns a callable which takes one parameter: a sequence object.
+    f = itemgetter(l)
+
+    s = [1, 2, 3]           s = python
+    f(s)    -> 2            f(s)    -> 'y'
+
+I can pass more than one index to itemgetter:
+l = [1, 2, 3, 4, 5, 6,]
+s = 'python'
+f = itemgetter(l, 3, 4)
+f(l)    -> (2, 4,5)
+f(s)    -> ('y', 'h', 'o')
+
+
+    Attribute Getters
+The attrgetter function is similar to itemgetter, but is used to retrieve object attributes.
+It also returns a callable, that takes the object as an argument.
+
+Suppose my_obj is an object with three properties:
+    my.a -> 10
+    my.b -> 20
+    my.c -> 30
+
+    f = attrgetter('a')         f(my_obj)

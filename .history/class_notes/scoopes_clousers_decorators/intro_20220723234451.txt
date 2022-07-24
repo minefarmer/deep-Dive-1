@@ -1,0 +1,6 @@
+                SCOPES, CLOSURES AND DECORATORS
+            Variable scopes             local scope
+                                        global scope
+                                        nonlocal scope
+                                        
+

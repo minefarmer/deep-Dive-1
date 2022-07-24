@@ -1,0 +1,45 @@
+                    OPERATOR MODULE
+            Functional Equivalents to Operators
+
+In the last lecture we wrote code such as:
+
+l = [1, 2, 3]
+reduce(lambda a, b: a * b, l)
+
+I can use a lambda expression to create a functional version of the * operator.
+
+The operator module operator was created for peasants like me.
+
+This module is a convenience module.
+
+I can always use my own functions and lambda expressions instead.  But, I ain't stupid.
+
+
+        Arithmetic functions
+add(a, b)
+mul(a, b)
+pow(a, b)
+mod(a, b)
+floordiv(a, b)
+neg(a)
+    (and many more)
+
+        Comparison and Boolean Operators
+lt(a, b)        gt(a, b)        eq(a, b)
+le(a, b)        ge(a, b)        ne(a, b)
+is_(a,b)        is_not(a,b)
+
+and_(a, b)
+or_(a, b)
+not_(a, b)
+
+        SEquence/Maping Operators
+conc(s1, s2)
+contains(s, val)
+countOf(s, val)
+getitem(s, i)                               # varients
+setitem(s, i, val)      # mutable objects
+delitem(s, i)           # mutable objects
+
+
+

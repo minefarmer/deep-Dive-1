@@ -1,0 +1,9 @@
+                SCOPES, CLOSURES AND DECORATORS
+            Variable scopes             local scope
+                                        global scope
+                                        non-local scope
+                                        nested scopes
+
+            Closures                    what they are
+            
+

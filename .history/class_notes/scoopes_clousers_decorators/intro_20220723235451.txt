@@ -1,0 +1,16 @@
+                SCOPES, CLOSURES AND DECORATORS
+            Variable scopes             local scope
+                                        global scope
+                                        non-local scope
+                                        nested scopes
+
+            Closures                    what they are           (they are not equivalent to lambdas!)
+                                        closure scopes
+
+            Decorators                  what they are
+                                        how they are related to cloures
+                                        convenience of using @
+
+            Applications
+
+

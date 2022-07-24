@@ -1,0 +1,8 @@
+                    OPERATOR MODULE
+            Functional Equivalents to Operators
+
+In the last lecture we wrote code such as:
+
+l = [1, 2, 3]
+reduce lambda
+
