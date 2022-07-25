@@ -1,0 +1,4 @@
+                        Non-local Scopes
+            Inner functions
+We can define functions from inside another function
+

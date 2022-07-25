@@ -1,0 +1,14 @@
+                        Non-local Scopes
+            Inner functions
+We can define functions from inside another function:
+
+def inner_func():                                               global scope
+    # some code
+                                                        local  (outer_func)
+    def inner_func():
+        # some code
+                                                        local
+    inner_func()
+
+
+
