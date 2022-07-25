@@ -51,9 +51,3 @@ In effect, both variables x (in outer and inner), point to the same cell.
 When requesting the value of the variable, Python will "double-hop" to get to the final variable.
 
 
-
-
-
-
-
-

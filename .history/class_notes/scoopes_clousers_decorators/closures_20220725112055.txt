@@ -30,27 +30,7 @@ We can assign that return value to a variable name:  fn = outer()
 fn()   -> python rocks!
 
 When we called fn
-at that time Python determined the value of x in the extended scope.
-But, notice that outer had finished running before we called fn - it's scope was "gone"!
-
-
-            Python Cells and Multi-Scoped Variables ***************************************************************
-
-def outer():                    Here the value of x is shared between two scopes:
-    x = 'python'                    outer
-    def inner():                    closure
-        print(x)
-    return inner                The label x is in two different scopes, but always references the same "value"
-
-Python does this by creating a cell as an intermediary object.      cell  0xA500
-                                                                                                    indirect reference              0xFF100
-                         outer.x   --->               0xFF100 <- reference to another object -> str 
-                                         inner.x /                                                     python
-
-In effect, both variables x (in outer and inner), point to the same cell.
-When requesting the value of the variable, Python will "double-hop" to get to the final variable.
-
-
+at that time Python determined the value of x 
 
 
 

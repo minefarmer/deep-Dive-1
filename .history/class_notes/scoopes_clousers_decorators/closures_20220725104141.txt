@@ -1,0 +1,15 @@
+                    Closures
+            Free Variables and Closures
+Remember: Functions defined inside another function can access the outer (nonlocal) variables.
+
+def outer():
+    x = 'python'                    
+                                    /
+    def inner():                   /
+        print("{0} rocks!".format(x))
+
+
+
+
+
+

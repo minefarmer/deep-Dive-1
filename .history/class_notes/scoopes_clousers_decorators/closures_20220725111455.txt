@@ -1,0 +1,27 @@
+                    Closures
+            Free Variables and Closures
+Remember: Functions defined inside another function can access the outer (nonlocal) variables.
+
+def outer():
+    x = 'python'                     this x refers to the one in outer's scope
+                                    /this nonlocal variable x is called a free variable.
+    def inner():                   /
+        print("{0} rocks!".format(x)) when we consider inner, we really are looking at:
+                                        The function inner
+    inner()                             the free variable x (with current value python)
+
+
+outer()     -> python rocks!            This is called a closure
+
+
+            Returning the inner function  ****************************************************************
+What happens if, instead of calling (running) inner from inside outer, we return it?
+
+def outer():
+    x = 'python'                     x is a free variable in inner
+                                    /  it is bound to the variable x in outer
+    def inner():                   /   this happens when outer runs.
+        print("{0} rocks!".format(x))           (i.e. when inner is created)
+                                        this is the closure.
+   return inner     
+
