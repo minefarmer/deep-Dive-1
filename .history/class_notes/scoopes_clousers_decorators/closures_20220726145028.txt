@@ -1,0 +1,178 @@
+                    Closures
+            Free Variables and Closures
+Remember: Functions defined inside another function can access the outer (nonlocal) variables.
+
+def outer():
+    x = 'python'                     this x refers to the one in outer's scope
+                                    /this nonlocal variable x is called a free variable.
+    def inner():                   /
+        print("{0} rocks!".format(x)) when we consider inner, we really are looking at:
+                                        The function inner
+    inner()                             the free variable x (with current value python)
+
+
+outer()     -> python rocks!            This is called a closure
+
+
+            Returning the inner function  ****************************************************************
+What happens if, instead of calling (running) inner from inside outer, we return it?
+
+def outer():
+    x = 'python'                     x is a free variable in inner
+                                    /  it is bound to the variable x in outer
+    def inner():                   /   this happens when outer runs.
+        print("{0} rocks!".format(x))           (i.e. when inner is created)
+                                        this is the closure.
+   return inner         # when we return inner, we are actully "returning" the closure.
+
+We can assign that return value to a variable name:  fn = outer()
+
+fn()   -> python rocks!
+
+When we called fn
+at that time Python determined the value of x in the extended scope.
+But, notice that outer had finished running before we called fn - it's scope was "gone"!
+
+
+            Python Cells and Multi-Scoped Variables ***************************************************************
+
+def outer():                    Here the value of x is shared between two scopes:
+    x = 'python'                    outer
+    def inner():                    closure
+        print(x)
+    return inner                The label x is in two different scopes, but always references the same "value"
+
+Python does this by creating a cell as an intermediary object.      cell  0xA500
+                                                                                                    indirect reference              0xFF100
+                         outer.x   --->               0xFF100 <- reference to another object -> str 
+                                         inner.x /                                                     python
+
+In effect, both variables x (in outer and inner), point to the same cell.
+When requesting the value of the variable, Python will "double-hop" to get to the final variable.
+
+
+            CLOSURES ***************************************************************************
+I can think of the closure as a function plus an extended scope that contains the free variables.
+The free variable's value is the object the cell points to - so that could change over time!
+Every time the function in the closure is called and the free variable is referenced:
+    Python looks up the cell object, and then whatever the cell is pointing to.
+
+def outer():
+    a = 100
+
+    x = 'python'                \
+                                 \  cell  0xA500        str   0xFF100
+    def inner():                 /     0xFF100 --------/
+        a = 10 # local variable /        \                    python
+        print("{10} rocks!".format(x))    \                (indirect reference)
+                                           \______
+    return inner                                   \
+fn = outer()        fr -> inner    + extended scope x
+
+fn.__code__.co_freevars    -> ('x',)   (a is not a free variable)
+
+fn.__closure__             -> (<cell at 0xA500: str object at 0xFF100>, )
+
+
+def outer():
+    x = 'python'
+    print(hex( id(x)))   --------------------------  0xFF100      indirect reference
+    def inner():
+        print(hex(id(x)))    --------------------------  0xFF100      indirect reference
+        print("{0} rocks!".format(x))
+    return inner
+
+fn = outer()
+fn()
+
+
+            Modifying free variables *******************************************************************
+
+                          count is a free variable
+def counter():   closure /  it is bound to the cell count
+    count = 0           /
+                      /
+    def inc():       /
+        nonlocal count
+        count += 1
+        return count
+                 --->   fn -> inc + count -> 0
+    return inc /
+              /
+fn = counter()
+
+fn()  -> 1      count's (indirect) reference changed from the object 0 to the object 1
+
+(call fn again)
+fn()   -> 2
+
+
+            Multiple instances of closures
+Every time we run a function, a new scope is created.
+If that function generates a closure, a new closure is created every time as well.
+
+def counter(): closure      f1 = counter()
+    count = 0               f2 = counter()
+
+    def inc():              f1()  -> 1
+        nonlocal count      f1()  -> 2      f1 and f2 do not have
+        count += 1          f1()  -> 3      the same extended scope
+        return count
+
+    return inc              f2()  -> 0      they are different instances of the closure
+                                            the cells are different
+
+
+                Shared Extended Scopes
+
+def outer():
+
+    count = 0        count is a free variable-bound to count in the extended scope
+                    /
+    def inc1():    /
+        nonlocal count
+        count *= 1
+        return count
+                     count is a free variable-bound to the same count
+    def inc2():     /
+        nonlocal count
+        count += 1     returns a tuple containing both closures
+        return count /
+                    /
+    return inc1, inc2
+
+f1, f2 = outer()
+
+f1() => 1
+f2() -> 2
+
+I might think the shared extended scope is highly unusual...  but it's not!
+
+def adder(n):
+    def inner(x):
+        return x + n
+
+    return inner
+
+add_1 = adder(1)
+add_2 = adder(2)    Three different closures - no shared scopes
+add_3 = adder(3)
+
+add_1(10)   -> 11
+add_2(10)   -> 12
+add_3(10)   -> 13
+
+
+    But, suppose we tried doing it this way:
+
+adders = []
+for i in range(1, 4):
+    adders.append(lambda x: x + n)
+
+n = 1: the free variable in the lambda is n, and it is bound to the n we created in the loop.
+n = 2: the free variable in the lambda is n, and it is bound to the (same) n we created in the loop.
+n = 3: the free variable in the lambda is n, and it is bound to the (same) n we created in the loop.
+
+adders[0](10)   -> 1
+adders[1](10)
+adders[2](10)   -> 13
