@@ -1,0 +1,29 @@
+                DECORATORS
+
+def counter(fn):
+    cnt = 0
+    def inner(*args, **kwargs):
+        nonlocal cnt
+        cnt += 1
+        print('{0} has been called {1} times'.format(fn.__name__, cnt))
+        return fn(*args, **kwargs)
+    return inner
+
+Note: Using (*args, **kwargs; lines 5 and 9) means we can call any function fn with any combination of positional and keyword-only arguments.
+
+def add(a, b=0):
+    return a +   (, which executes )
+
+add = counter(add)      (add points to add on line 14. -> and will return the inner function on line 10. )
+
+result = add(1, 2)       (it will print(Function add was called 1 times) and ( result = 3))
+
+            (We essentially modified our add function by wrapping it inside another function that added some functionality to it.)
+            (We also say that we decorated our function add with the function counter.)
+
+
+In general a decorator function:  *****************************************************************************************
+    Takes a function as an argument
+    returns a closure
+    The closure usually accepts any combination of parameters.
+    runs some code in the inner function 

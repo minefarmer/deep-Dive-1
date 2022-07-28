@@ -1,0 +1,81 @@
+                DECORATORS
+
+def counter(fn):
+    cnt = 0
+    def inner(*args, **kwargs):
+        nonlocal cnt
+        cnt += 1
+        print('{0} has been called {1} times'.format(fn.__name__, cnt))
+        return fn(*args, **kwargs)
+    return inner
+
+Note: Using (*args, **kwargs; lines 5 and 9) means we can call any function fn with any combination of positional and keyword-only arguments.
+
+def add(a, b=0):
+    return a +   (, which executes )
+
+add = counter(add)      (add points to add on line 14. -> and will return the inner function on line 10. )
+
+result = add(1, 2)       (it will print(Function add was called 1 times) and ( result = 3))
+
+            (We essentially modified our add function by wrapping it inside another function that added some functionality to it.)
+            (We also say that we decorated our function add with the function counter.)
+
+
+In general a decorator function:  *****************************************************************************************
+    Takes a function as an argument
+    returns a closure
+    The closure usually accepts any combination of parameters.
+    runs some code in the inner function (CLOSURE)
+    the closure function calls the original function using the arguments passed to the closure.
+    returns whatever is returned by the function call.
+
+
+                outer function (fn)     (The outer function defines an inner function)
+
+            inner function
+                (*args, **kwargs)               (usually takes a variable number of arguments)
+              (inner function does something...)
+            (returns fn(*args, **kwargs))
+
+
+            @ symbol **********************************************************************************************************
+                # In our previous example, we saw that counter was a decorator, and we could decorate our add function using:   add = counter(add).
+
+In general, if func is a decorator function, we decorate another function my_func using:  my_func = func(my_func)
+
+This is so common that Python provides a convenient way of writing that:
+
+    @counter                        @func
+    def add(a, b):                  def my_func(...):
+        return a + b                    ...
+
+# is the same as writing.           # is the same as writing.
+
+def add(a, b):                      def my_func(...):
+    return a + b                        ...
+
+add = counter(add)                  my_func = func(my_func)
+
+
+                Introspecting Decorator RFunctions
+
+                                                            def counter(fn):
+                                                                cnt = 0
+                                                                def inner(*args, **kwargs):
+                                                                    nonlocal cnt
+                                                                    cnt += 1
+                                                                    print('{0} has been called {1} times'.format(fn.__name__, cnt))
+                                                                    return fn(*args, **kwargs)
+                                                                return inner
+
+Lets us the same count de
+
+
+
+
+
+
+
+
+
