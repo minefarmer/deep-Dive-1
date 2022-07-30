@@ -1,0 +1,4 @@
+                DECORATOR PARAMETERS
+In the last video I saw some built-in decorators that can handle som arguments:
+
+

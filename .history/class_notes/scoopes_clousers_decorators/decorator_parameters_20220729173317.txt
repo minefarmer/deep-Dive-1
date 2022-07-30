@@ -1,0 +1,6 @@
+                DECORATOR PARAMETERS
+In the last video I saw some built-in decorators that can handle som arguments:
+
+@wraps(fn)              @lru_cache(maxsize= 256)
+
+
