@@ -1,0 +1,54 @@
+                            TUPLES_VS_LISTS_VS_STRINGS
+
+    Tuples                          lists                               Strings
+containers                      containers                          containers
+order matters                   order matters                       order matters
+Heterogeneous / Homogeneous     Heterogeneous / Homogeneous         Homogeneous
+Indexable                       Indexable                           Indexable
+Iterable                        Iterable                            Iterable
+Immutable                       Immutable                           Immutable
+    Fixed length                    Length can change                   Fixed length
+    Fixed order                     Order of elements can change        Fixed order
+        Cannot do in place sorts        Can do in place sorts
+        Cannot do in place reversals    Can do in place reversals
+
+
+            Immutability of Tuples *****************************
+Elements cannot be added or removed.
+The order of the elements cannot be changed.
+Works well for representing data structures:
+
+    Point: (10, 20)         1'st element is the x-coordinate
+                            2'nd element is the y-coordinate
+
+    Circle: (0, 0, 10)      1'st element os the x-coordinate of the center
+                            2'nd element is the y-coordinate of the center
+                            3'rd element is the radius
+
+
+This is heterogeneous
+City:('London', 'UK' 8_780_000)         The position of the data has meaning.
+
+
+
+            Tuples as Data records  *****************************
+
+Think of a tuple as a data record where the position of the data has meaning.
+    london = ('London', 'UK' 8_780_000)     -> london is the variable name.
+
+Because tuples, strings and intergers are immutable, we are guaranteed that the data for London will never change.
+
+We can have a list of tuples:       cities = (['London', 'New York', 'Beijing'])
+
+
+            Extracting data from Tuples  *******************************************************************************
+
+Since tuples are sequences just like strings and lists, we can retrieve items by index.
+
+london = ('London', 'UK', 8_780_000)
+
+city = london[0]        country = london[1]           population = london[2]
+
+The list of cities is homogeneous (contains cities only)
+
+

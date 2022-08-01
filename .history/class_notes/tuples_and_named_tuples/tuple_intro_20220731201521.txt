@@ -1,0 +1,9 @@
+                            TUPLES
+        Tuples are...
+read-only lists...    at list that's how many introductions to python will present tuples!
+This isn't wrong, but there's a lot more going on with tuples...
+If I think of tuples as read-only lists, I'm missing out on some interesting ideas.
+
+We really need to think of tuples also as data records
+
+
