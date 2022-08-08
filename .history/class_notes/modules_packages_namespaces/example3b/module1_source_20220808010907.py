@@ -1,0 +1,5 @@
+# module1_source.py
+import sys
+import importer
+
+module1 = importer
