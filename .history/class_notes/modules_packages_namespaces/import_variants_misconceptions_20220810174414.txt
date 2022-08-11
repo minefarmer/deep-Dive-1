@@ -1,0 +1,51 @@
+                IMPORT VARIANTS AND MISCONCEPTIONS
+        Import variants
+
+# module1.py
+import math
+                                    sys.modules
+is math in sys.modules?             math    <module object>
+    if not, load it and insert ref                           \
+                                                                  \
+                                                                        \
+Add symbol math to module1's global namespace referencing the same object \
+                                                                         /
+                                                                      /
+                                    module1.globals()              /
+                                    math           <module object>
+                                                                    math symbol in namspace
+
+
+# module1.py
+import math as r_math
+                                    sys.modules
+is math in sys.modules?             math    <module object>
+    if not, load it and insert ref                           \
+                                                                  \
+                                                                        \
+Add symbol r_math to module1's global namespace referencing the same object \
+                                                                         /
+                                                                      /
+                                    module1.globals()              /
+                                    r_math          <module object>
+                                                                    r_math symbol in namspace
+                                                                    math symbol not in namespace
+(if r_math symbol already exists in module1's global namespace refer)
+
+# module.py
+import math as r_math
+                                    sys.modules
+is math in sys.modules?             math    <module object>
+    if not, load it and insert ref                           \
+                                                                  \
+                                                                        \
+Add symbol r_math to module1's global namespace referencing the same object \
+                                                                         /
+                                                                      /
+                                    module1.globals()              /
+                                    r_math          <module object>
+                                                                    r_math symbol in namspace
+
+
+
+

@@ -1,0 +1,13 @@
+                IMPORT VARIANTS AND MISCONCEPTIONS
+        Import variants
+
+# module1.py
+import math
+                                    sys.modules
+is math in sys.modules?             math    <module object>
+    if not, load it and insert ref                          
+
+
+Add symbol math to module1's global namespace referencing the same object
+
+

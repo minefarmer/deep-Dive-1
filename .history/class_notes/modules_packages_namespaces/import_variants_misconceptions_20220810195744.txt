@@ -1,0 +1,112 @@
+                IMPORT VARIANTS AND MISCONCEPTIONS
+        Import variants
+
+# module1.py
+import math
+                                    sys.modules
+is math in sys.modules?             math    <module object>
+    if not, load it and insert ref                           \
+                                                                  \
+                                                                        \
+Add symbol math to module1's global namespace referencing the same object \
+                                                                         /
+                                                                      /
+                                    module1.globals()              /
+                                    math           <module object>
+                                                                    math symbol in namespace
+
+
+# module1.py
+import math as r_math
+                                    sys.modules
+is math in sys.modules?             math    <module object>
+    if not, load it and insert ref                           \
+                                                                  \
+                                                                        \
+Add symbol r_math to module1's global namespace referencing the same object \
+                                                                         /
+                                                                      /
+                                    module1.globals()              /
+                                    r_math          <module object>
+                                                                    r_math symbol in namespace
+                                                                    math symbol not in namespace
+(if r_math symbol already exists in module1's global namespace referencing the same object)
+
+
+
+# module.py
+from math import sqrt as r_sqrt
+                                    sys.modules
+is math in sys.modules?             math    <module object>
+    if not, load it and insert ref
+
+
+Add symbol r_sqrt defined in math to module1's global namespace referencing math.sqrt
+
+
+                                    module1.globals()
+                                    sqrt          <module.sqrt object>
+                                                                    math symbol not in namespace
+
+(if r_sqrt symbol already exists in module's namespace, replace reference)
+
+# module.py
+from math import *
+                                            sys.modules
+is math in sys.modules?                     math    <module object>
+    if not, load it and insert ref
+
+
+                                                                 what "all" means can be
+Add "all"symbols defined in math to module1's global namespace   defined by the module being
+                                                                 imported
+
+
+                                    module1.globals()
+                                    pi       <math.pi object>
+                                    sin      <math.sin object>
+                                    and many more               math symbol not in namespace
+
+(if any symbol already exists in module1's namespace, replace thier reference)
+
+
+
+
+            Commonality *****************************************************
+
+In every case the math module was loaded into memory and referenced in sys.modules.
+
+Running         from math import sqrt
+
+        did not "partially" load math
+
+        it only affected what symbols were placed in module1's namespace!
+
+Things might be different with packages, but for simple modules this is the behavior.
+
+
+
+            Why 'from <module> import can lead to bugs.  ************************************************
+
+# module1.py            module1.globals()
+from cmath import *        sqrt   <cmath.sqrt>
+                           ...
+
+
+
+from cmath import *     module1.globals()
+                          sqrt   <math.sqrt>
+                           ...
+
+
+            Efficiency **************************************************************************
+
+What's more efficient?      import math
+
+                        or  from math import sqrt
+
+importing   -> same amount of work
+
+calling         math.sqrt(2)    <------ This first needs to find the sqrt symbol in math's namespace
+                sqrt(2)  <-- one less item to lookup
+                                dict lookup -> super fast!
