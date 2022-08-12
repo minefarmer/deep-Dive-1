@@ -7,4 +7,3 @@ result = timing.timeit(code, 100)
 print(result)
 
 
-print(f'loading run.py: ++name__ = {__name__}')  # loading run.py: ++name__ = __main__
