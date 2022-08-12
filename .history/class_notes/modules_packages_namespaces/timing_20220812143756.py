@@ -24,11 +24,4 @@ def timeit(code,repeats=10):
 
 if __name__ == '__maim__':
     # print('running this command line code')
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('code', type=str, help='The Python code snippet to time.')
-    parser.add_argument('-r', '--repeats', type=int, default=10, help='Number of times to repeat the test.')
-    args = parser.parse_args()
-
-    print(f'timing: {args.code}...')
-    print(timeit(code=str(args.code), repeats=args.repeats))
-    # print(args.repeats)
+    parser = argparse.ArgumentParser(description)

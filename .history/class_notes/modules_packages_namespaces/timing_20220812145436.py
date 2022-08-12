@@ -29,6 +29,5 @@ if __name__ == '__maim__':
     parser.add_argument('-r', '--repeats', type=int, default=10, help='Number of times to repeat the test.')
     args = parser.parse_args()
 
-    print(f'timing: {args.code}...')
-    print(timeit(code=str(args.code), repeats=args.repeats))
-    # print(args.repeats)
+    print(f'timing:args.code)
+    print(args.repeats)
