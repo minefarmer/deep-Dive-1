@@ -1,0 +1,11 @@
+                Modules Recap
+
+        What we've seen sofar...
+
+Modules can be imported using
+    the import statement            importlib.import_module
+
+When a module is imported:
+    system cache is checked first sys.modules   
+
+
