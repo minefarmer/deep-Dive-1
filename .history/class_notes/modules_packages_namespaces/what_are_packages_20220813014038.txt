@@ -1,0 +1,7 @@
+                # What are Packages?
+        Packages are Modules            (but modules are not necessarily packages)
+
+They can contain
+        modules
+        packages        (called sub-packages)
+        
