@@ -1,0 +1,11 @@
+                    WHY PACKAGES?
+            Code Organization, Ease of use
+What if I have 50 different functions and classes in my program?
+
+    
+
+
+
+
+
+

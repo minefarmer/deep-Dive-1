@@ -1,0 +1,136 @@
+                    WHY PACKAGES?
+            Code Organization, Ease of use
+What if I have 50 different functions and classes in my program?
+
+    api.py                                                (single file)
+    connect                         Users               audit_endpoint
+    execute_no_result               UserProfile
+    execute_single_row              Users               Logger
+    execute_multi_row
+                                    BlogPost            validate_email
+normalize_string                    BlogPosts           validate_phone
+convert_str_to_bool                                     validate_name
+format_iso_date                     RouteTable
+current time                        Configuration       etd.
+
+authenticate                        JSONEncoder
+validate_token
+get_permissions                     UnitTests
+authorize_endpoint                                                  IN ONE FILE?
+
+
+                Start with modules      ->                          better
+
+    api/                                                            but still unwieldy - everything is at the top level
+        api.py
+        dbutilities.py                                              Too many imports:   import dbutilities
+        jsonutilities.py                                                                import jsonutilities
+        typeconversions.py                                                              import typeconversions
+        validations.py                                                                  import validations
+        authentication.py                                                               import authentication
+        users,py                                                                        import authorzation
+        blogpost.py                                                                     import users
+        logging                                                                         etc
+        unittests.py
+
+                                                                    certain modules can be broken down further:
+                                                                            dbutilities -> connections, queries
+
+                                                                    certain modules belong "together"
+                                                                            authentication, authorzation => security
+
+
+
+            So, packages  ***************************************************************************************************
+
+
+    api/                                                            api/
+        api.py                                                      |---- utilities/
+        dbutilities.py                                              |    |    __util__.py
+        jsonutilities.py                                            |    | ---database/
+        typeconversions.py                                          |    |        __init__.py
+        validations.py                                              |    |        connections.py
+        authentication.py                                           |    |        queries,py
+        users,py                                                    |    |--- json
+        blogpost.py                                                 |    |        __init__.py
+        logging                                                     |    |        encoders.py
+        unittests.py                                                |--- security/
+                                                                    |           __init__  
+                                                                    |           authentication.py 
+                                                                    |           authorzation.py
+                                                                    |--- models/
+                                                                    |    |    __init__
+                                                                    |    |--- users/
+                                                                    |    |      __init__
+                                                                    |    |      user.py
+                                                                    |    |      Userprofile,py
+
+
+                Another Use Case  *****************************************************************************************
+
+I have a module that implements two functions/classes for users of the module.
+        These two objects require 20 different helper functions and 2 additional helper classes.
+
+From the module developers's perspective:
+        much easier to break the code down into multiple modules.
+
+From the module user's perspective:
+        They just want a single import for the function and class.
+                i.e. it should look like a single module.
+
+
+
+                Module Developer's Perspective  ***********************************************************************
+
+mylib            function to be exported lives here.
+    __init__.py /
+    submod1.py ^
+    submod2.py
+    subpack1
+        __init__.py    class to be exported to user lives here
+        pack1mod1.py  /
+        pack1mod2.py ^
+
+    Smaller code modules, with a specific purpose, are easier to write, debug. test. and understand.
+
+User should not have to write:                  from mylib.submod1 import my_func
+                                                from mylib.subpack1.mod2 import myClass
+
+Much easier for the user if they could write:   from mylib import my_func, myClass
+
+                        or, simply              import mylip
+                                                mylib,my_func()   mylib.myClass()       
+
+
+
+                Using __init__.py
+
+I can use packages' __init__.py code to export (expose) just what's needed by our users.
+
+
+        Example:
+                  # mylib.__init__.py
+mylib/           /  from mylib.submod1 import my_func
+    __init__.py ^   from mylib.subpack1.pack1mod2 import MyClass
+    submod1.py \                                                                User uses it this way:
+    submod2,py  \   function to bs exported to users lives here.                Import mylib
+    subpack1                                                                    
+        __init__.py                                                             mylib.my_func()
+        pack1mod1.py                                                            mylib.MyClass()
+        pack1mod2.py <--- class to be exported to user lives here.
+
+
+
+        So why Packags? *****************************************************************
+
+ability to break code up into smaller chunks. makes our code:
+
+        easier to write
+        easier to test and debug                just like books are broken down into chapters, sections, paragraphs, etc.
+        easier to read/understand
+        easier to document
+
+but, they can still be "stiched" together
+        hides inner implimentation from users
+
+

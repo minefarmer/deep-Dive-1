@@ -1,0 +1,23 @@
+                    WHY PACKAGES?
+            Code Organization, Ease of use
+What if I have 50 different functions and classes in my program?
+
+    api.py                                                  (single file)
+    connect                         Users               audit_endpoint
+    execute_no_result               UserProfile
+    execute_single_row              underscores
+    execute_multi_row
+                                    BlogPost
+normalize_string                    BlogPosts
+convert_str_to_bool
+format_iso_date                     RouteTable
+current time                        Configuration
+
+authenticate                        JSONEncoder
+validate_token
+get_permissions                     UnitTests
+authorize_endpoint
+
+
+
+
