@@ -1,6 +1,7 @@
 # validators init
 
 # import common.validators.boolean
+<<<<<<< HEAD
 # import common.validators.date
 # import common.validators.json
 # import common.validators.numeric
@@ -12,3 +13,21 @@ from common.validators.numeric import *
 
 
 
+=======
+import common.validators.date
+import common.validators.json
+import common.validators.numeric
+
+
+
+
+
+
+
+
+
+# from .boolean import *
+# from .date import *
+# from .json import *
+# from .numeric import *
+>>>>>>> c95dd32ee7a336af104fde8290807e3c3a22f888
