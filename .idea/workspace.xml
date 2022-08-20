@@ -4,7 +4,267 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e50c7e0-9283-4a38-8dc8-4dc7c6b2c203" name="Changes" comment="Merge remote-tracking branch 'origin/main'" />
+    <list default="true" id="2e50c7e0-9283-4a38-8dc8-4dc7c6b2c203" name="Changes" comment="Merge remote-tracking branch 'origin/main'">
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/__init___20220819192728.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/__init___20220819192739.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/__init___20220819192749.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/__init___20220819192815.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/__init___20220819192822.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/__init___20220819192825.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/__init___20220819192835.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/__init___20220819192844.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/__init___20220819192850.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/__init___20220819192855.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/__init___20220819192901.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/__init___20220819192918.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/__init___20220819192932.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/__init___20220819192938.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/__init___20220819192947.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/__init___20220819192954.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/__init___20220819193003.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/__init___20220819193033.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/__init___20220819193040.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/__init___20220819193046.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/__init___20220819193053.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/__init___20220819193059.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/__init___20220819193102.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/__init___20220819193105.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/__init___20220819193218.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/__init___20220819193222.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/__init___20220819193225.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/__init___20220819193238.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/__init___20220819193251.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/__init___20220819193253.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/__init___20220819193257.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/__init___20220819193301.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/__init___20220819193312.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/__init___20220819193324.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/__init___20220819193334.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/main_20220819201404.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/main_20220819201506.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/main_20220819201514.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/main_20220819201520.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/main_20220819201542.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/main_20220819201549.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/main_20220819201708.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/main_20220819201733.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/main_20220819201801.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/main_20220819201811.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/main_20220819201814.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/main_20220819201821.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/main_20220819201902.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/main_20220819201909.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/main_20220819201936.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/main_20220819201957.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/main_20220819202423.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/validators/__init___20220819191457.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/validators/__init___20220819191558.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/validators/json_20220819144607.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/package_imports/common/validators/json_20220819204345.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/packages_imports/__init___20220819212854.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/packages_imports/__init___20220819213114.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/packages_imports/__init___20220819213119.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/packages_imports/__init___20220819213122.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/packages_imports/__init___20220819213138.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/packages_imports/__init___20220819213150.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/packages_imports/__init___20220819213156.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/packages_imports/__init___20220819213302.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/index_20220819144926.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/packages_imports/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/packages_imports/common/validators/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/packages_imports/common/validators/boolean.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/packages_imports/common/validators/date.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/.vs/slnx.sqlite" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/models/posts/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/models/posts/post.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/models/posts/posts.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/models/users/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/models/users/user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/validators/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/validators/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/validators/boolean.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/validators/date.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/validators/json.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/validators/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/validators/main1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/validators/main2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/validators/numeric.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/main1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/main3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/shared/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/shared/validators/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/shared/validators/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/shared/validators/boolean.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/shared/validators/date.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/shared/validators/json.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/shared/validators/numeric.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220710150237.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220710211822.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220710211828.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220711021004.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220711021019.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220711021036.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220711021042.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713022259.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713022318.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713022329.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713022336.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713022344.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713022350.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713022354.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713022359.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713022500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713022511.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713022518.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713022538.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713022543.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713022547.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713022552.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713022558.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713022602.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713022853.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713022914.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713022920.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713022925.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713022930.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713022936.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713022939.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713022948.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713022958.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713023006.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713023018.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713023034.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713023043.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713023053.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713023106.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713023111.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713023227.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713023237.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713023248.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713023314.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713023318.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713023406.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713023436.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713023454.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713023510.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713023516.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713023523.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713023529.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713023609.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713023722.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713023730.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713092144.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713092154.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713092204.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713100840.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713100847.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713100901.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713100912.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713100924.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713100935.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713141229.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713141231.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713141241.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713141247.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713141249.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713141253.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713141259.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713141307.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713141311.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713141321.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713141338.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713141348.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713141355.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713141420.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713141432.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713205751.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713205757.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713205810.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220713205812.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220715001201.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220715001214.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220715203329.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717022830.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717022839.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717022856.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717022905.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717022942.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717022950.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717022954.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717023001.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717023005.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717023008.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717023013.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717023021.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717023024.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717023028.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717023037.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717023046.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717023056.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717023132.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717023138.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717023146.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717023200.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717023210.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717023222.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717023229.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717023243.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717023249.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717023300.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717023318.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717023343.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717023355.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717023522.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717023533.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717212334.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717212337.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717212341.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717212346.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220717212404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220718004029.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220718004046.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deep-Dive-1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deep-Dive-1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Changes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Changes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_12_2022_8_09_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_12_2022_8_09_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/.ipynb_checkpoints/imports_importlib-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/.ipynb_checkpoints/imports_importlib-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/imports_importlib.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/imports_importlib.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/old_reloading_modules.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/old_reloading_modules.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/common/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/common/main2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/common/main4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/common/models/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/common/models/posts/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/common/models/posts/post.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/common/models/posts/posts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/common/models/users/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/common/models/users/user.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/common/validators/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/common/validators/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/common/validators/boolean.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/common/validators/date.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/common/validators/json.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/common/validators/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/common/validators/main1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/common/validators/main2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/common/validators/numeric.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/main1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/main3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/shared/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/shared/validators/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/shared/validators/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/shared/validators/boolean.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/shared/validators/date.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/shared/validators/json.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/shared/validators/numeric.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/reloading_modules.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/reloading_modules.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,17 +278,49 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="27zMSOJHQsiIBp5LPoI540UDf5f" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="deep-Dive-1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/common" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/common/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.__init__" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -81,6 +373,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="bye" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
     <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main'" />
