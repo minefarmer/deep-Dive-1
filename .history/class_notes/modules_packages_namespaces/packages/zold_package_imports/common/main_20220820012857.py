@@ -1,8 +1,8 @@
 # common main
 import validators.boolean
-import validators.date
-import validators.json
-import validators.numeric
+import common.validators.date
+import common.validators.json
+import common.validators.numeric
 
 common.validators.json.is_json('{}')
 common.validators.date('2022-01-01')
