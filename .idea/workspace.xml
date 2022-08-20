@@ -5,30 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e50c7e0-9283-4a38-8dc8-4dc7c6b2c203" name="Changes" comment="Merge remote-tracking branch 'origin/main'">
-      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/packages_imports/main_20220820011609.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/packages_imports/main_20220820012711.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/main_20220819202422.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/main_20220820012821.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/main_20220820012857.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/main_20220820012906.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/main_20220820012914.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/validators/__init___20220819191557.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/validators/__init___20220820013125.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/validators/__init___20220820013233.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/validators/__init___20220820013311.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.history/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/validators/__init___20220820013547.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/class_notes/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/packages_imports/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/packages_imports/common/validators/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/packages_imports/common/validators/boolean.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/packages_imports/common/validators/date.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/validators/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/validators/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/shared/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/.vs/VSWorkspaceState.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/.vs/slnx.sqlite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/.vs/zold_package_imports/v17/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/models/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/models/posts/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/models/posts/post.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/models/posts/posts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/models/users/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/models/users/user.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/validators/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/validators/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/validators/boolean.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/validators/date.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/validators/json.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/validators/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/validators/main1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/validators/main2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/common/validators/numeric.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/main1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/main3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/shared/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/shared/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/shared/validators/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/shared/validators/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/shared/validators/boolean.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/shared/validators/date.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/shared/validators/json.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/zold_package_imports/shared/validators/numeric.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
