@@ -13,8 +13,8 @@ from .numeric import *
 
 __all__ =  (boolean.__al__ +
             date.__al__ +
-            json.__all__ +
-            numeric.__all__)
+           json.__all__ +
+           numeric.__all__)
 
 
 
