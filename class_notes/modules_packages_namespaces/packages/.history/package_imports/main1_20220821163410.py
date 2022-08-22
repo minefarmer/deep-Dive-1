@@ -1,8 +1,12 @@
 #  package imports main
-import common.validators
+import common.validators.boolean
+import common.validators.date
+import common.validators.json
+# import common.validators.numeric
+from common.validators.numeric import is_inter
 
-common.validators.boolean.is_boolean('true')
-
+common.validators.json.is_json("{}")
+common.validators.date.is_date('2022-08-21')
 
 print('\n\n***** self *****')
 for k in dict(globals()).keys():
@@ -87,8 +91,3 @@ for k in common.validators.numeric.__dict__.keys():
             # is_numeric
             # numeric_helper_1
             # numeric_helper_2
-
-
-
-
-

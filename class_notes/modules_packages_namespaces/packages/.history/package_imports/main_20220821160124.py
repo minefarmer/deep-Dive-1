@@ -1,7 +1,11 @@
 #  package imports main
-import common.validators
+import common.validators.boolean
+import common.validators.date
+import common.validators.json
+import common.validators.numeric
 
-common.validators.boolean.is_boolean('true')
+common.validators.json.is_json("")
+import common.models as models
 
 
 print('\n\n***** self *****')
@@ -22,7 +26,7 @@ for k in dict(globals()).keys():
 print('\n\n***** common *****')
 for k in common.__dict__.keys():
     print(k)  # ***** common *****
-            #__name__
+            # __name__
             # __doc__
             # __package__
             # __loader__
@@ -34,9 +38,9 @@ for k in common.__dict__.keys():
             # validators
 
 
-print('\n\n***** validators *****')
-for k in common.validators.__dict__.keys():
-    print(k)  # ****** validators *****
+print('\n\n***** models *****')
+for k in common.models.__dict__.keys():
+    print(k)  # ***** validators *****
             # __name__
             # __doc__
             # __package__
@@ -52,29 +56,9 @@ for k in common.validators.__dict__.keys():
             # numeric
 
 
-
-
-# print('\n\n***** models *****')
-# for k in common.models.__dict__.keys():
-#     print(k)  # ***** validators *****
-            # __name__
-            # __doc__
-            # __package__
-            # __loader__
-            # __spec__
-            # __path__
-            # __file__
-            # __cached__
-            # __builtins__
-            # boolean
-            # date
-            # json
-            # numeric
-
-
-print('\n\n***** numeric *****')
-for k in common.validators.numeric.__dict__.keys():
-    print(k)  # ***** numeric *****
+# print('\n\n***** numeric *****')
+# for k in common.validators.numeric.__dict__.keys():
+#     print(k)  # ***** numeric *****
             # __name__
             # __doc__
             # __package__

@@ -3,7 +3,6 @@ import common.validators
 
 common.validators.boolean.is_boolean('true')
 
-
 print('\n\n***** self *****')
 for k in dict(globals()).keys():
     print(k)  # ***** self *****

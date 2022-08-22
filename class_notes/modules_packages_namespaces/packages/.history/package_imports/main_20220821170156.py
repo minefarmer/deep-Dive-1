@@ -1,8 +1,7 @@
 #  package imports main
 import common.validators
 
-common.validators.boolean.is_boolean('true')
-
+common.validators.boolean.is_boolean
 
 print('\n\n***** self *****')
 for k in dict(globals()).keys():

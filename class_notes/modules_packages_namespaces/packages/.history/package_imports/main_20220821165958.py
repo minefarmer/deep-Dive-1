@@ -1,8 +1,8 @@
 #  package imports main
-import common.validators
+import common.validators as validators
 
-common.validators.boolean.is_boolean('true')
-
+common.validators.json.is_json("{}")
+common.validators.date.is_date('2022-08-21')
 
 print('\n\n***** self *****')
 for k in dict(globals()).keys():
