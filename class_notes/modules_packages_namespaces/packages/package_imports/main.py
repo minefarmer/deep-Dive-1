@@ -1,8 +1,9 @@
 #  package imports main
 import common.validators as validators
-import common.models.post.post
-import common.models.post.posts
-import common.models.users.user
+import common
+# import common.models.post.post
+# import common.models.post.posts
+# import common.models.users.user
 
 validators.is_boolean('true')
 validators.is_json("{}")
@@ -11,7 +12,7 @@ validators.is_date('2022-0822')
 
 john_post = common.models.posts.post.Post()
 john_post = common.models.posts.posts.Posts()
-john = common.modules.users.user,User()
+john = common.modules.users.user.User()
 
 print(k)  # ***** self *****
             # __name__
@@ -41,9 +42,9 @@ for k in common.__dict__.keys():
             # validators
 
 
-print('\n\n***** validators *****')
-for k in common.validators.__dict__.keys():
-    print(k)  # ****** validators *****
+# print('\n\n***** validators *****')
+# for k in common.validators.__dict__.keys():
+#     print(k)  # ****** validators *****
             # __name__
             # __doc__
             # __package__
@@ -57,6 +58,7 @@ for k in common.validators.__dict__.keys():
             # date
             # json
             # numeric
+
 
 
 
@@ -79,9 +81,9 @@ for k in common.models.__dict__.keys():
             # numeric
 
 
-print('\n\n***** numeric *****')
-for k in common.validators.numeric.__dict__.keys():
-    print(k)  # ***** numeric *****
+# print('\n\n***** numeric *****')
+# for k in common.validators.numeric.__dict__.keys():
+#     print(k)  # ***** numeric *****
             # __name__
             # __doc__
             # __package__

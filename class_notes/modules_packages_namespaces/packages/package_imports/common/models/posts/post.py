@@ -1,6 +1,6 @@
 # post.py
 
-__all__ ['Post']
+
 class Post:
     pass
 

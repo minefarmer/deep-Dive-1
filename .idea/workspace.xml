@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e50c7e0-9283-4a38-8dc8-4dc7c6b2c203" name="Changes" comment="Merge remote-tracking branch 'origin/main'">
+      <change afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/common/models/users/user.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/common/models/posts/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/common/models/posts/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/common/models/posts/post.py" beforeDir="false" afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/common/models/posts/post.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/common/models/posts/posts.py" beforeDir="false" afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/common/models/posts/posts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/common/validators/boolean.py" beforeDir="false" afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/common/validators/boolean.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/common/models/users/users.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/packages/package_imports/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
