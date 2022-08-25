@@ -1,8 +1,9 @@
 # validators init
-# import shared.validators.boolean
-# import shared.validators.date
-# import shared.validators.json
-# import shared.validators.numeric
+import common.validators.boolean
+import common.validators.date
+import common.validators.json
+import common.validators.numeric
+TODO: 140   15:23
 
 from .boolean import *
 from .date import *

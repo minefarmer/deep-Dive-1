@@ -1,9 +1,8 @@
-# package imports  main.py
-import common.validators.boolean
-import common.validators.date
-import common.validators.json
-import common.validators.numeric
+# main1
+import sharerd.validators
 
+# common.validators.boolean.is_boolean('true')
+common.validators.json.is_json('{}')
 
 print('\n\n***** self *****')
 for k in dict(globals()).keys():
@@ -56,18 +55,19 @@ for k in common.validators.__dict__.keys():
 
 
 
-print('\n\n***** numeric *****')
-for k in common.validators.numeric.__dict__.keys():
-    print(k)  # ***** numeric *****
-            # __name__
-            # __doc__
-            # __package__
-            # __loader__
-            # __spec__
-            # __file__
-            # __cached__
-            # __builtins__
-            # is_interger
-            # is_numeric
-            # numeric_helper_1
-            # numeric_helper_2
+        # print('\n\n***** numeric *****')  # Doesn't work here  ****************************************
+        # for k in common.validators.numeric.__dict__.keys():
+        #     print(k)  # ***** numeric *****
+#             __name__
+#             __doc__
+#             __package__
+#             __loader__
+#             __spec__
+#             __file__
+#             __cached__
+#             __builtins__
+#             is_interger
+#             is_numeric
+#             numeric_helper_1
+#             numeric_helper_2
+
