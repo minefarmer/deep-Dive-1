@@ -1,10 +1,13 @@
 #  main
-import shared.validators
+import common
+import common.validators as validators
+import common.models as models
+import common.helpers as helpers
 
-shared.validators.boolean
-shared.validators.date
-shared.validators.json
-shared.validators.numeric
+validators.is_boolean('true')
+validators.is_json("{}")
+validators.is_numeric(10)
+validators.is_date('2022-0822')
 
 common.validators.json.is_json('{}')
 common.validators.date.is_date('2018-01-01')

@@ -1,4 +1,4 @@
-# numeric.py
+# validators numeric
 
 
 def is_interger(arg):
