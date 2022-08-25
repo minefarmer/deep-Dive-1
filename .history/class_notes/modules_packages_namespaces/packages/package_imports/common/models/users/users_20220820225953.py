@@ -1,0 +1,4 @@
+# users.py
+
+
+class User:
