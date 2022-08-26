@@ -1,6 +1,6 @@
 # validators date
 
-# __all__ = ['is date']
+# __all__ = ['is date']  # __all__ = ['is_date']   # this limits to line (5) what is imported.
 
 def is_date(arg):
     pass
