@@ -1,0 +1,81 @@
+                NAMESPACE PACKAGES
+
+            What are implicit namespace packages?
+
+    Namespace packages are package-like
+Directories
+    may contain modules
+    may contain nested regular oackages
+    may contain nested namespace packages
+    but, cannot contain __init__.py
+
+These directories are implicitiy made into these special types  -> see  PEP 420
+
+
+            Mechanics *****************************************************************
+
+utils/                  utils/ does not contain __init__.py         -> namespace package
+ validators/            validators/ does not contain __init__.py    -> namespace packages
+   boolean.py           boolean.py is a file with a .py extension   -> module
+   date.py
+   json/                json/ contains __init__.py                  -> regular package
+     __init__.py
+     serializers.py     is just a file with a .py extension         -> module
+     validators.py
+
+            Regular vs Namespace Packages  *************************************************
+    Regular Package                                 Namespace Package
+type            -> module                           type            -> module
+
+__init__        -> yes                              __init__.py     -> no
+
+__file__        -> package __init__                 __file__        -> not set
+
+paths           -> breaks if parent directories     paths           -> dynamic path computation,
+                   change and absolute imports                         so OK if parent directories change
+                   are used.
+                                                                        (my import statements will still
+                                                                        need to be modified)
+
+single package lives in single directory              single package can live in multiple (non-nested) directories
+                                                      in fact, parts of the namespace may even be in a zip file
+
+
+            Example
+                                                                                        app/
+                                                                                            utils/
+                                                                                                validators/
+                    namespace                      regular                                          boolean.py
+                    package                        package                                     common/
+                    utils                       common                                          __init__.py
+                                                                                                    validators
+type                module                      module                                                  boolean.py                  
+
+__name__            utils                       common
+
+__repr__()    <module utils (namespace)>        <module common from '.../app/common/app'>  
+
+__path__      _Namespace({'.../app/utils'})     ['.../app/utils']
+
+__file__            not set                     ../app/common/__init__.py
+
+__package__         utils                       common
+
+  -> validators     utils.validators            common.validators
+
+
+            Import Examples
+
+utils/       \
+    validators\
+    boolean.py  ->        import utils.validators.boolean  (imports this module)
+    date.py    /  also >  from utils.validators import date
+    json/     /
+
+        __init__.py  \
+        serializers.py ->   import utils.validators.json.serializers
+        validators.py
+
+First familiarze myself with regular packages.
+Then I can check out out namespace packages, if I want.
+If I'm interested. read PEP 420 - that definitally be my starting point
