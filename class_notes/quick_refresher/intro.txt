@@ -1,0 +1,13 @@
+Python Type Hierarchy       # focus on types covered in this course
+
+Multi-Line Statements and Strings
+
+Naming Conventions
+
+Conditionals
+
+Functions
+
+Loops   While
+                Break, Continue, Try
+        For

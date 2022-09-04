@@ -1,0 +1,19 @@
+                Identifier names
+
+are case-sensitive  my_Var   are different identifiers
+                    my_Var
+                    ham
+                    Ham
+
+        must follow certain rules
+
+                should follow certain conventions
+
+
+    Must
+start with underscore (_) or a letter (a-z A-Z)
+    followed by any number of underscores (_), letters (a-z A-Z), or digits (0-9)
+var     my_Var      index1      index_1     _Var      __var
+
+
+

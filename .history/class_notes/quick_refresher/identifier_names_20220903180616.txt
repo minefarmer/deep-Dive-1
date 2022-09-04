@@ -1,0 +1,15 @@
+                Identifier names
+
+are case-sensitive  my_Var   are different identifiers
+                    my_Var
+                    ham
+                    Ham
+
+        must follow certain rules
+
+                should follow certain conventions
+
+
+
+
+

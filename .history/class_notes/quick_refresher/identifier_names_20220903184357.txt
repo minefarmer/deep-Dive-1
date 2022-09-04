@@ -1,0 +1,54 @@
+                Identifier names
+
+are case-sensitive  my_Var   are different identifiers
+                    my_Var
+                    ham
+                    Ham
+
+        must follow certain rules
+
+                should follow certain conventions
+
+
+    Must
+start with underscore (_) or a letter (a-z A-Z)
+    followed by any number of underscores (_), letters (a-z A-Z), or digits (0-9)
+var     my_Var      index1      index_1     _var      __var     __lt__      are all legal names
+
+Reserved words:
+None      True      False
+and       or        not
+if        else      elif
+if        while     break   continue    pass
+def       lambda    global  nonlocal    return  yield
+
+
+
+
+    Conventions
+
+_my_var
+|
+|- single underscore  -> is a convention that is used to indicate that this is an internal or a private object. (This indicates to other people that they shouldn't mess with this variable.) internal or private.
+Objects named this way will not get imported by a statement such as: from module import *  # there are other ways I can import it
+
+
+
+
+__my_var            -> Used to "mangle" class attributes - useful in inheritance chains
+ |
+ | - double underscore
+
+
+
+
+__my_var__          -> Used for system-defined names that have a special meaning to the interpreter.
+ |       |
+ | - double underscores     Don't invent them, stick to the ones pre-defined by Python!                         ""   ""   ""
+
+
+
+
+        Other naming conventions        -> from the PEP 8 Style Guide
+
+    Packages

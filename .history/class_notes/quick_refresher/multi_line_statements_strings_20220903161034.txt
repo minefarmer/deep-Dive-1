@@ -1,0 +1,23 @@
+                Multi-line Statements and Strings
+    Python Program
+---> physical lines of code         end with a physical newline character
+    ---> logical lines of code      end with a logical NEWLINE token
+        ---> tokenized
+
+
+    physical newline vs logical newline
+        sometimes, physical newlines are ignored
+        in order to combine multiple physical lines
+        into a single logical line of code
+        terminated by a logical NEWLINE token
+
+        Conversion can be implicit or explicit
+
+
+
+
+    implicit
+Expressions in:
+
+    list literals: []
+    tuple literals
