@@ -1,0 +1,46 @@
+                Multi-line Statements and Strings
+    Python Program
+---> physical lines of code         end with a physical newline character
+    ---> logical lines of code      end with a logical NEWLINE token
+        ---> tokenized
+
+
+    physical newline vs logical newline
+        sometimes, physical newlines are ignored
+        in order to combine multiple physical lines
+        into a single logical line of code
+        terminated by a logical NEWLINE token
+
+        Conversion can be implicit or explicit
+
+
+
+
+    implicit
+Expressions in:
+                                    [1,         [1, #item 1
+    list literals: []                2,          2, #item 2
+    tuple literals: ()               3]          3  #item 3]
+    dictionary literals: {}
+    set literals: {}                    def my_func(a,
+    function arguments / parameters                 b,
+                                                    c:)
+                                            print(a, b, c)
+
+
+        supports inline comments        my_func(10, #comment
+                                                20, 30)
+
+
+I can break up statements over multiple lines explicitly, by using the \ (backslash) character
+
+Multi-line statements are not implicitly converted to  a single logical line.
+
+I can break up statements over multiple lines explicitly, by using the \ (backslash) character.
+
+Multi-line statements are not implicitly converted to a single logical line.
+    if a
+        
+
+
+

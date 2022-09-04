@@ -1,0 +1,24 @@
+                Course overview
+
+This course is about!
+
+    The python language and built-in types
+    The standard library
+    becoming an expert Python developer
+    idiomatic python
+
+
+        The Zen of Python       Tim Peters          import this         PEP 20
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complicated.
+Complex is better than complicated.
+Flat is better than nested.
+Spasce is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practically beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+

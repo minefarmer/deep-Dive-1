@@ -1,0 +1,21 @@
+                Quick Refresher
+
+    Python's type hierarchy
+
+variables
+
+conditionals
+
+functions
+
+loops
+
+break, continue and try
+
+classes
+
+
+    Variables and Memory
+
+what are variables?  -> symbols for memory addresses
+

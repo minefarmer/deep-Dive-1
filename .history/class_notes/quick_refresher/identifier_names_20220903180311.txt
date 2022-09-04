@@ -1,0 +1,9 @@
+                Identifier names
+
+are case-sensitive  my-var
+                    my_Var
+                    ham
+                    Ham
+
+
+

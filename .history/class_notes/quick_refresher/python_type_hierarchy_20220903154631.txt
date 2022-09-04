@@ -1,0 +1,29 @@
+                Python Type Hierarchy
+                        (subset)
+
+    The following is a subset of the Python type hierarchy that we will cover in this course:
+
+        Numbers
+    Integral    Non-Integral
+Integers        Floats (c doubles)
+Booleans        Complex
+                Floats
+                Fractions
+
+
+
+        Collections
+    Sequences                   Sets                    Mapping
+Mutable    Immutable      Mutable   Immutable
+Lists      Tuples         Sets      Frozen Sets       Dictionaries
+           Strings
+
+
+
+
+        Callables
+
+User-Defined Functions
+Generators
+Classes
+

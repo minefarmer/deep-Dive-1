@@ -1,0 +1,15 @@
+                Quick Refresher
+
+Python's type hierarchy
+
+variables
+
+conditionals
+
+functions
+
+loops
+
+break, continue and try
+
+c
