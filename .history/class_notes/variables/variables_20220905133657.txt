@@ -8,4 +8,3 @@ memory references
                         shared references
                             variable equality
                                 everything is an object
-

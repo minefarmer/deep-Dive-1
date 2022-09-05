@@ -7,5 +7,4 @@ memory references
                     mutability and immutability
                         shared references
                             variable equality
-                                everything is an object
-
+                                everything is an objec
