@@ -1,0 +1,14 @@
+                    Module Recap
+
+        Modules can be imported using
+The import statement        importlib.import_module
+
+        When a module is imported:
+system cache is checked first   sys.module      -> if in cache. just returns cached reference.
+otherwise:
+module has to be located (found) somewhere.     finders     e,g, sys.meta_path
+
+module code has to be retrieved (loaded)        
+
+
+

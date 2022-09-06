@@ -1,0 +1,19 @@
+                            TUPLES_VS_LISTS_VS_STRINGS
+
+    Tuples                          lists                               Strings
+containers                      containers                          containers
+order matters                   order matters                       order matters
+Heterogeneous / Homogeneous     Heterogeneous / Homogeneous         Homogeneous
+Indexable                       Indexable                           Indexable
+Iterable                        Iterable                            Iterable
+Immutable                       Immutable                           Immutable
+    Fixed length                    Length can change                   Fixed length
+    Fixed order                     Order of elements can change        Fixed order
+        Cannot do in place sorts        Can do in place sorts
+        Cannot do in place reversals    Can do in place reversals
+
+
+            Immutability of Tuples *****************************
+Elements cannot be added or removed.
+
+

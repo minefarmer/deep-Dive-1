@@ -1,0 +1,15 @@
+                # What are Packages?
+        Packages are Modules            (but modules are not necessarily packages)
+
+They can contain
+        modules
+        packages        (called sub-packages)
+
+If a module is a package, it must have a value set for __path__
+
+After I have imported a module, I can easily see if that module is a package by inspecting the __path__ atriibute   (empty -> module, not-empty -> package)
+
+After i have imported a module, you can easily see if that module is a package bt inspecting the __path__ atriibute (empty -> module, not-empty -> package)
+
+
+

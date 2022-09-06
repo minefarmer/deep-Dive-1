@@ -1,0 +1,6 @@
+                            TUPLES
+        Tuples are...
+read-only lists...    at list that's how many introductions to python will present tuples!
+This isn't wrong
+
+

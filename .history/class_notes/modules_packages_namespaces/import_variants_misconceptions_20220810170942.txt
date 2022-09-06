@@ -1,0 +1,9 @@
+                IMPORT VARIANTS AND MISCONCEPTIONS
+        Import variants
+
+# module1.py
+from math import sqrt as r_sqrt
+                            sys.modules
+
+
+

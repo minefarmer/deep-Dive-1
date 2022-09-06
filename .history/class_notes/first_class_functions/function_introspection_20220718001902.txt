@@ -1,0 +1,30 @@
+                        FUNCTION INTROSPECTION
+Functions are first-class objects.
+
+They have attributes.       __doc__         __annotations__
+
+We can attach our own attributes.
+
+
+def my_func(a, b):
+    return a + b
+
+my_func.category = 'math'
+my_func.sub_category = 'arithmetic'
+
+
+print(my_func.category)         -> math
+
+print(my_func.sub_category)     -> arithmetic
+
+
+            The dir()functions    ***************************************************
+
+dir( is a built-in function that, given an objects an argument, will return a list of valid attributes for that object)
+
+
+            Function attributes:__name__, __defaults__, __kwdefaults__
+
+__name__ is a built-in function that, given
+
+

@@ -1,0 +1,62 @@
+                    REDUCING FUNCTIONS
+
+        Reducing Functions in Python
+These ar the functions that recombine an iterable recursively, ending up with a single return value.
+Also called accumulators, aggregators, or folding functions.
+
+Example:    Finding the maximum value in an iterable.
+
+a ,  a ,  a ,  ...,  a
+ 0    1    2          n-1
+
+max(a, b)  -> maximum of a and b
+
+result = a
+          0
+
+result = a
+          0
+result = max(result, a )
+                      1
+result = max(result, a )
+                      2
+...
+result = max(result, )
+                    n-1
+
+        -> max value in a , a , a , ..., a
+                         0   1   2        n-1
+
+
+Because we have not studied iterables in general, we will stay with the special case of sequences.
+
+        Using the Loop.
+l = [5, 8, 6, 10, 9]
+
+max_value = lambda a, b: a if a > b else b
+
+def max_sequence(sequence):                     result = 5
+    result = sequence[0]                        result = max(5, 8) = 8
+    for e in sequence[1: ]:                     result = max(8, 6) 8
+    result = max_value(result, e)               result = max(8, 10) = 10
+     return result                              result = max(8, 10) = 10
+                                                    result -> 10
+
+
+    Notice the sequence of steps
+
+l = [5,     8,     6,     10,     9]
+     ^      ^      ^       ^      ^
+     |      |      |       |      |
+     5      |      |       |      |
+      \     |      |       |      |
+       \    |      |       |      |
+    max(5,  8)     |       |      |
+        8_____     |       |      |
+               \   |       |      |
+            max(8, 6)      |      |
+                8_____     |      |
+                      \    |      |
+                   max(8,  10)    |
+                            
+

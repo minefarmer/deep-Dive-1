@@ -1,0 +1,8 @@
+                    Variable Equality
+We can think of variable equality in two fundamental ways:
+
+        Memory Address                              Object State (data)
+            is
+        
+
+

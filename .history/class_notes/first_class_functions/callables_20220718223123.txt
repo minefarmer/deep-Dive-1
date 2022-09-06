@@ -1,0 +1,16 @@
+                WHAT ARE CALLABLES?
+
+Any object that can be called using the () operator.                callables always return a value.
+
+    like functions and methods,      but it goes beyond just these two ...
+
+many other objects in Python are also callable.
+
+To see if an object is callable, we can use the built-in functon:  callable
+
+callable(print) -> True
+
+callable('abc'.upper) -> True
+
+ca
+

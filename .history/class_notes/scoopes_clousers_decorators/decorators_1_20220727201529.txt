@@ -1,0 +1,122 @@
+                DECORATORS
+
+def counter(fn):
+    cnt = 0
+    def inner(*args, **kwargs):
+        nonlocal cnt
+        cnt += 1
+        print('{0} has been called {1} times'.format(fn.__name__, cnt))
+        return fn(*args, **kwargs)
+    return inner
+
+Note: Using (*args, **kwargs; lines 5 and 9) means we can call any function fn with any combination of positional and keyword-only arguments.
+
+def add(a, b=0):
+    return a +   (, which executes )
+
+add = counter(add)      (add points to add on line 14. -> and will return the inner function on line 10. )
+
+result = add(1, 2)       (it will print(Function add was called 1 times) and ( result = 3))
+
+            (We essentially modified our add function by wrapping it inside another function that added some functionality to it.)
+            (We also say that we decorated our function add with the function counter.)
+
+
+In general a decorator function:  *****************************************************************************************
+    Takes a function as an argument
+    returns a closure
+    The closure usually accepts any combination of parameters.
+    runs some code in the inner function (CLOSURE)
+    the closure function calls the original function using the arguments passed to the closure.
+    returns whatever is returned by the function call.
+
+
+                outer function (fn)     (The outer function defines an inner function)
+
+            inner function
+                (*args, **kwargs)               (usually takes a variable number of arguments)
+              (inner function does something...)
+            (returns fn(*args, **kwargs))
+
+
+            @ symbol **********************************************************************************************************
+                # In our previous example, we saw that counter was a decorator, and we could decorate our add function using:   add = counter(add).
+
+In general, if func is a decorator function, we decorate another function my_func using:  my_func = func(my_func)
+
+This is so common that Python provides a convenient way of writing that:
+
+    @counter                        @func
+    def add(a, b):                  def my_func(...):
+        return a + b                    ...
+
+# is the same as writing.           # is the same as writing.
+
+def add(a, b):                      def my_func(...):
+    return a + b                        ...
+
+add = counter(add)                  my_func = func(my_func)
+
+
+                Introspecting Decorator Functions
+
+                                                            def counter(fn):
+                                                                cnt = 0
+                                                                def inner(*args, **kwargs):
+                                                                    nonlocal cnt
+                                                                    cnt += 1
+                                                                    print('{0} has been called {1} times'.format(fn.__name__, cnt))
+                                                                    return fn(*args, **kwargs)
+                                                                return inner
+
+Lets us the same count decorator
+
+@counter                                                       # remember the we could equally have written: mult = counter(mult)
+def mult(a, b, c=1):
+    """
+        returns the product of three values
+    """
+    return a * b * c
+
+mult.__name__    -> inner       not mult        mult's name "changed" when we decorated it.  They are not the same function after all.
+
+
+help(mult)      -> Help on function inner in module __main__:  -> inner(*args, **kwargs)  # WE have also "lost" our docstring, and even the original function signature. Even using the inspect module,s signature does not yield better results.
+
+
+        # Do not use, see below! Functools One approach to fixing this:
+We could try to fix this problem, at least for the docstring and function name as follows:
+
+def counter(fn):
+    cnt = 0
+    def inner(*args, **kwargs):
+        nonlocal cnt
+        cnt += 1
+        print('{0} has been called {1} times'.format(fn.__name__, cnt))
+        return fn(*args, **kwargs)
+    inner.__name__ = fn.__name__    # need to over-ride 'name' 
+    inner.__doc__ = fn.__doc__      # need to over-ride 'doc' 
+    return inner
+
+
+                The functools.wraps function **************************************************************************************
+
+The functools module has a wraps function that we can use to fix the metadate of our inner function in our decorator.
+
+from functools import wraps
+
+In fact, the wraps function is itself a decorator.
+        But, it needs to know what was our "original" function-in this case fn.
+
+def counter(fn):
+    cnt = 0
+    def inner(*args, **kwargs):
+        nonlocal cnt
+        cnt += 1
+        counters[fn.__name__] = cnt
+        return fn(*args, **kwargs)
+    inner = wraps(fn)(inner)
+    return inner
+
+# or this
+

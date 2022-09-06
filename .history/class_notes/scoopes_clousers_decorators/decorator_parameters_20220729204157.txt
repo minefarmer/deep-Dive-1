@@ -1,0 +1,114 @@
+                DECORATOR PARAMETERS
+In the last video I saw some built-in decorators that can handle som arguments:
+
+@wraps(fn)              @lru_cache(maxsize= 256)    <----- function call
+def inner():            def factorial(n):
+   ...                      ...
+
+This should look quite different from the decorators we have been creating and using:
+
+@timed      <------ no function call
+def fibonacci(n):
+   ...
+
+
+            The Timed decorator  ****************************************************************************
+
+def timed(fn):
+    from time import perf_counter
+
+    def inner(*args, **kwargs):
+        total_elapsed = 0
+        for i in range(10):
+            start = perf_counter()
+            result = fn(*args, **kwargs)
+            total_elapsed += (perf_counter() - start)
+        avg_elapsed = total_elapsed / 10
+        print(avg_elapsed)
+        return result
+    return inner
+
+@timed
+def my_func():      OR      my_func = timed(my_func)
+    ...
+
+One approach  ********************************************************************
+
+                / extra parameter
+def timed(fn, reps):
+    from time import perf_counter
+
+    def inner(*args, **kwargs):
+        total_elapsed = 0
+        for i in range(reps):   <-----  free variable bound to reps in outer.
+            start = perf_counter()
+            result = fn(*args, **kwargs)
+            total_elapsed += (perf_counter() - start)
+        avg_elapsed = total_elapsed / reps
+        print(avg_elapsed)
+        return result
+    return inner
+
+
+my_func = timed(my_func, 10)  # works fine
+
+Rethinking the solution  **********************
+
+@timed
+def my_func():                  my_func = timed(my_func)
+    ...
+
+So, timed is a function that returns that inner closure that contains our original function.
+
+In order for this to work as intended:
+@timed(10)  <-- timed is a function
+def my_func:
+    ...
+
+Timed(10) will need to return our original timed decorator when called.
+
+dec = timed(10)     <------------ timed(10) returns a decorator,
+@dec
+def my_func():      <------------ and we decorate our function with dec.
+    ...
+
+
+            Nested closures to the rescue!
+
+def outer(reps):
+
+def timed(fn):
+    from time import perf_counter
+
+    def inner(*args, **kwargs):
+        total_elapsed = 0
+        total_elapsed = 0
+        total_elapsed = 0
+        for i in range(reps):   <-----  free variable bound to reps in outer.
+            start = perf_counter()
+            result = fn(*args, **kwargs)
+            total_elapsed += (perf_counter() - start)
+        avg_elapsed = total_elapsed / reps
+        print(avg_elapsed)
+        return result
+    return inner
+
+return timed    <-----  calling outer(n) returns our original decorator.
+                        with reps set to n (free variable)
+
+                        /    <-- this is how I decorate (my_func) ---> \
+my_func = outer(10)(my_func)                    OR                  @outer(10)   <--  This outer function is creating a decorator
+                                                                    def my_func():
+                                                                        ...
+
+            Decorator Factories   ********************************************************************************
+
+The outer function is not itself a decorator.
+
+    instead it returns a decorator whe called.
+
+and any arguments passed to outer can be referenced (as free variables) inside our decorator.
+
+We call this outer function a decorator factory function.
+
+    (it is a function that creates a new decorator each time it is called)

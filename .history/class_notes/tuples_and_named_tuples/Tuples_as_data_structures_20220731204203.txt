@@ -1,0 +1,8 @@
+                            TUPLES_VS_LISTS_VS_STRINGS
+
+    Tuples                          lists                               Strings
+containers                      containers                          containers
+order matters                   order matters                       order matters
+Heterogeneous / Homogeneous      Heterogeneous / Homogeneous  
+
+

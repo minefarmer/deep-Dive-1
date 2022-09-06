@@ -1,0 +1,69 @@
+                    Closures
+            Free Variables and Closures
+Remember: Functions defined inside another function can access the outer (nonlocal) variables.
+
+def outer():
+    x = 'python'                     this x refers to the one in outer's scope
+                                    /this nonlocal variable x is called a free variable.
+    def inner():                   /
+        print("{0} rocks!".format(x)) when we consider inner, we really are looking at:
+                                        The function inner
+    inner()                             the free variable x (with current value python)
+
+
+outer()     -> python rocks!            This is called a closure
+
+
+            Returning the inner function  ****************************************************************
+What happens if, instead of calling (running) inner from inside outer, we return it?
+
+def outer():
+    x = 'python'                     x is a free variable in inner
+                                    /  it is bound to the variable x in outer
+    def inner():                   /   this happens when outer runs.
+        print("{0} rocks!".format(x))           (i.e. when inner is created)
+                                        this is the closure.
+   return inner         # when we return inner, we are actully "returning" the closure.
+
+We can assign that return value to a variable name:  fn = outer()
+
+fn()   -> python rocks!
+
+When we called fn
+at that time Python determined the value of x in the extended scope.
+But, notice that outer had finished running before we called fn - it's scope was "gone"!
+
+
+            Python Cells and Multi-Scoped Variables ***************************************************************
+
+def outer():                    Here the value of x is shared between two scopes:
+    x = 'python'                    outer
+    def inner():                    closure
+        print(x)
+    return inner                The label x is in two different scopes, but always references the same "value"
+
+Python does this by creating a cell as an intermediary object.      cell  0xA500
+                                                                                                    indirect reference              0xFF100
+                         outer.x   --->               0xFF100 <- reference to another object -> str 
+                                         inner.x /                                                     python
+
+In effect, both variables x (in outer and inner), point to the same cell.
+When requesting the value of the variable, Python will "double-hop" to get to the final variable.
+
+
+            CLOSURES ***************************************************************************
+I can think of the closure as a function plus an extended scope that contains the free variables.
+The free variable's value is the object the cell points to - so that could change over time!
+Every time the function in the closure is called and the free variable is referenced:
+    Python looks up the cell object, and then whatever the cell is pointing to.
+
+def outer():
+    a = 100
+
+    x = 'python'            \
+                             \  cell  0xA500        str   0xFF100
+def inner():                 /     
+    a = 10 # local variable /
+    print("{10} rocks!".format(x))
+
+return inner

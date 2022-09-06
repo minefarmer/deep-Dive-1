@@ -1,0 +1,17 @@
+                DECORATORS
+
+def counter(fn):
+    cnt = 0
+    def inner(*args, **kwargs):
+        nonlocal cnt
+        cnt += 1
+        print('{0} has been called {1} times'.format(fn.__name__, cnt))
+        return fn(*args, **kwargs)
+    return inner
+
+Note: Using (*args, **kwargs; lines 5 and 9) means we can call any function fn with any combination of positional and keyword-only arguments.
+
+def add(a, b=0):
+    return a +   -> returns the inner function on line 
+
+add = counter(add)      (add points to add on line 14. -> )

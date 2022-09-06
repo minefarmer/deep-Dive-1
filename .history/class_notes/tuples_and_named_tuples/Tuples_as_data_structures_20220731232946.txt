@@ -1,0 +1,96 @@
+                            TUPLES_VS_LISTS_VS_STRINGS
+
+    Tuples                          lists                               Strings
+containers                      containers                          containers
+order matters                   order matters                       order matters
+Heterogeneous / Homogeneous     Heterogeneous / Homogeneous         Homogeneous
+Indexable                       Indexable                           Indexable
+Iterable                        Iterable                            Iterable
+Immutable                       Immutable                           Immutable
+    Fixed length                    Length can change                   Fixed length
+    Fixed order                     Order of elements can change        Fixed order
+        Cannot do in place sorts        Can do in place sorts
+        Cannot do in place reversals    Can do in place reversals
+
+
+            Immutability of Tuples *****************************
+Elements cannot be added or removed.
+The order of the elements cannot be changed.
+Works well for representing data structures:
+
+    Point: (10, 20)         1'st element is the x-coordinate
+                            2'nd element is the y-coordinate
+
+    Circle: (0, 0, 10)      1'st element os the x-coordinate of the center
+                            2'nd element is the y-coordinate of the center
+                            3'rd element is the radius
+
+
+This is heterogeneous
+City:('London', 'UK' 8_780_000)         The position of the data has meaning.
+
+
+
+            Tuples as Data records  *****************************
+
+Think of a tuple as a data record where the position of the data has meaning.
+    london = ('London', 'UK' 8_780_000)     -> london is the variable name.
+
+Because tuples, strings and intergers are immutable, we are guaranteed that the data for London will never change.
+
+We can have a list of tuples:       cities = (['London', 'New York', 'Beijing'])
+
+
+            Extracting data from Tuples  *******************************************************************************
+
+Since tuples are sequences just like strings and lists, we can retrieve items by index.
+
+london = ('London', 'UK', 8_780_000)
+
+city = london[0]        country = london[1]           population = london[2]
+
+The list of cities is homogeneous (contains cities only).
+But, a city (the tuple) is heterogeneous.
+
+
+            Extracting data from Tup0les *******************************************************************************
+
+I can also use tuple unpacking.  ->  covered in the function arguments section.
+
+new_york = (New York', 'USA', 8_500_000)  <-  three values packed in this tuple.
+
+city, country, population = new_york
+_____unpacked__tuple____
+
+
+            Dummy variables  ******************************************************************************************
+
+This is sometin I'm likely to run accross when I look at Python code that uses tuple unpacking.
+
+Sometimes, we are only interested in a subset of the data fields in a tuple, not all of them.
+
+Suppose we are only interested in the city name and population:
+
+city, _, population = ('Beijing', 'China', 21_000_000)
+
+_ is actually a legal variable name = so there's nothing special about it.
+
+but by convention, we use the underscore to indicate this is a variable we don't care about.  -> in fact we could have used (ignored).
+
+
+
+        It's also used in extended unpacking too.
+
+record = ('DJIA', 2018, 1, 19, 25987.35, 26071.72, 25945.83, 26071.72)
+symbol, year, month, day, open, high, low, close = record
+
+Let's say we are only interested in the symbol, year, month, day, and close fields.
+
+We could do it this way:    symbol = record[0]
+                            year = record[1]        Yuck!
+                            month = record[2]
+                            day = record[3]
+                            close = record[4]
+
+symbol, year, close
+

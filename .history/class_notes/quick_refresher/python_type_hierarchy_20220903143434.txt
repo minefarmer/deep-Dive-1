@@ -1,0 +1,7 @@
+                Python Type Hierarchy
+                        (subset)
+
+    The following is a subset of the Python type hierarchy that we will cover in this course:
+
+    Numbers
+Integral

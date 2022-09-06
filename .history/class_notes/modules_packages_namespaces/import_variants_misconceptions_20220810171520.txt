@@ -1,0 +1,8 @@
+                IMPORT VARIANTS AND MISCONCEPTIONS
+        Import variants
+
+# module1.py
+import math
+                            sys.
+is math in sys.modules?
+

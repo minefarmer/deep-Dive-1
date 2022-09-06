@@ -1,0 +1,191 @@
+                        Scopes and Namespaces
+
+When an object is assigned to a variable    a = 10
+
+    that variable points to some object
+
+        and we say that the variable (name) is bound to that object.
+
+That object can be accessed using that name in various parts of my code.
+
+
+            But not just anywhere in my code!  ***********************************************************
+
+That variable name and it's binding (name and object) only "exist" in specific parts of my code.
+
+    The portion of code where that name/binding is defined, is called the (lexical scope) of the variable.
+
+    These bindings are stored in (namespaces).      'Each scope has it's own 'namespace'.
+
+
+            The Global scope.   *****************************************************************************************
+The global scope is essentially the module scope.
+It spans a single file only.
+There is no concept of a truly global scope (across all modules in our entire app) in Python.
+The only exception to this are some of the built-in globally available objects, such as:
+
+    True, False, None, dict, print
+
+The built-in and global variables can be used anywhere inside our module, including inside any function.
+
+
+        Global scopes are nested inside the built-in scope.
+
+            Built-in scope                                            name space
+
+Module1                    name space                               var1        0xA345E
+Scope                                                               func1       0xFF34A
+    name
+    space
+
+                    Module2 scope
+                            name
+                            space
+
+If I reference a variable name inside a scope and Python does not find it in that scope's namespace - it will look in that enclosing scope's namespace.
+
+    Examples
+module1.py              Python does not find True or print in the current (module/globle) scope.
+
+print(True)             So, it looks for them in the enclosing scope -> built-in
+                                    Finds them there  -> True
+
+
+module2.py              Python does not find a or print in the current (module/glogal) scope.
+print(a)                So, it looks for them in the enclosing scope -> built-in.  # Then it (looks up) if it can't find it in it's own scope.
+                        Finds print, but not a.     -> get run-time Name Error
+
+
+module3.py
+print = lambda x: 'hello {0}!',format(x)
+s = print('world')        Python FINDS print IN THE MODULE SCOPE - SO IT USES IT!!!   S -> HELLO WORLD!
+
+
+
+            Local Scope **************************************************************************************************************
+When we create functions, we can create variable names inside those functions (using assignments).
+    e. g.   a = 10
+
+Variables defined inside a function are not created until the function is called.
+
+Every time the function is called, a new scope is created. Variables defined inside the function are assigned to that scope.  -> Function local scope.
+                                                                                                                              -> local scope
+The actual object the variable references could be different each time the function is called.
+(This is why recursion works!)
+
+    Example             my_func
+def my_func(a, b):      a    \
+    c = a * b            b    |  # These names will be considered local to my_func.
+    return c              c  /
+
+                my_func
+my_func('z', 2)  a-> 'z'
+                   b-> 2    \
+                     c-> 'zz' \
+                                > same names, different local scopes
+                my_func       /
+my_func(10, 5)   a-> 10     /
+                  b-> 5
+                   c->'50
+
+
+
+            Nested Scopes
+Scopes are often nested.
+
+            Built-in Scope
+
+        Module Scope
+     # inside the built-in scope
+
+        Local Scope                 If I have a function(local scope) Python will look inside the local scope first.
+                Local Scope         If I call a function a second time, then I'll have a different local scope.
+
+
+
+            Namespace lookups       When requesting the object bound to a variable name:
+                                        e.g. print(a)
+
+                                    Python will try to find the object bound to the variable.
+                                        It will look in the current local scope first.
+                                            Then it looks in the Module scope
+                                                Then the built-in scope          # Works up the chain of enclosing scopes
+
+
+    EXAMPLE module1.py
+
+                                built-in scope
+    module1.py                                True
+    a = 10      \            global scope  a-> 10       # global scope is inside built-in scope
+                  \                       my_func
+                    \---> # 'inside the global scope'  # module1 is the local scope
+def my6_func(b):
+    print(True)         # the local scope (b->300)
+    print(a)    / -----/                           / # inside a local scope  b-> 'a'
+    print(b)  /                                 /
+            /                                /
+my_func(300)                              /
+                                        /
+my_func('a')---------------------------
+
+When my_func(var) finishes running, the scope is gone too! And the reference count of the object var was bound to was bound to (referenced) is documented.
+We also say that var goes out of scope.
+
+
+        Accessing the global scope from the local scope. *******************************************************************
+When retrieving the value of a global variable from inside a function, Python automatically searches the local scope's namespace, and up the chain of all enclosing scope namespaces.
+
+    local    -> global   -> built-in
+
+What about modifying a global variables value from inside the function?
+
+a = 0            >  assignment -> Python interprets this as a local variable (at compile-time)
+                /              -> the local variable a (masks) the global variable a
+def my_func(): /
+    a = 100 <--                                         built-in
+    print(a)                                     global scope      a->0
+                                                                my_func
+my_func()   -> 100                               local scope
+                                                        a->100
+print(a) -> 0
+
+
+            The global keyword  ************************************************************************
+I can tell Python that a variable is meant to be scoped in the global scope by using the global keyword.
+
+a = 0                   \        built-in (scope)
+                         \                  global (scope)
+def my_func():            a->0               my_func
+    global a            /
+    a = 100                              local (scope)
+
+my_func()
+
+print(a) -> 100
+
+
+            Global and local scoping *******************************************************************************8
+When Python encounters a function definition at compile-time,
+    it will scan for any labels (variables) that have values assigned to them (anywhere in the function),
+        if the label has not been specified as global, then it will be local.
+
+    Variables that are referenced, but not assigned a value anywhere in the function will not be local, and Python will, at run-time, look for them in enclosing scopes.
+
+a = 10
+              a is referenced only in an entire function at compile time -> a non-local
+def func1(): /
+    print(a)/
+
+def func2():/ assignment at compile time -> a local
+    a = 100/
+
+def func3(): / assignment at compile time -> a global  # because we told python a was global
+    global a/
+    a = 100/
+
+def func4():
+    print(a)
+
+
+
+

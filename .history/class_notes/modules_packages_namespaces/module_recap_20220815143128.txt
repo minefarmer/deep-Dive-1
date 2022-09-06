@@ -1,0 +1,25 @@
+                    Module Recap
+
+        Modules can be imported using
+The import statement        importlib.import_module
+
+        When a module is imported:
+system cache is checked first   sys.module      -> if in cache. just returns cached reference.
+
+otherwise:
+module has to be located (found) somewhere.     finders     e,g, sys.meta_path
+module code has to be retrieved (loaded)        loaders     returned by finder-> ModuleSpec
+"empty" module typed object is created.
+A reference to the module is added to the system cache.     sys.modules
+module is compiled
+module is executed      -> sets up the module's namespace (module.__dict.__ is module.globals())
+
+
+        Module Finders  ***************************************************************************************
+sys,meta_path   ->  _frozen_importlib.BuiltinImporter       finds built-ins, such as math
+                    _frozen_importlib.FrozenImporter  
+
+
+
+
+

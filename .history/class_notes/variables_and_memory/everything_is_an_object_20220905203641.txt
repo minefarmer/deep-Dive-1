@@ -1,0 +1,8 @@
+                    Everything is an object
+
+Integers (int)
+Booleans (bool)
+Strings (str)
+
+
+

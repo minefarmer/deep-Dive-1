@@ -1,0 +1,5 @@
+                SCOPES, CLOSRES AND DECORATORS
+            Variable Scopes
+
+
+

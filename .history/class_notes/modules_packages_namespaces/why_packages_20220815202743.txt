@@ -1,0 +1,12 @@
+                    WHY PACKAGES?
+            Code Organization, Ease of use
+What if I have 50 different functions and classes in my program?
+
+    api.py                                                  (single file)
+    connect                         User
+    execute_no_result               UserProfile
+    
+
+
+
+

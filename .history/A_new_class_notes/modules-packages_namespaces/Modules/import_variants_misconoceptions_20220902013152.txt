@@ -1,0 +1,18 @@
+                Import Variants and Misconceptions
+        Import Variants
+# module1.py
+import math
+
+                                        sys.modules
+is math is sys modules?                  math       <module object>
+    if not, load it and insert ref
+                                                                          \
+add symbol math to module1's global namespace referencing the same object. |
+                                                                          /
+                                        module1.globals()             /
+                                                                    /
+                                         math        <module object>
+
+                                                                      math symbol in namespace
+        Now, if the math symbol already exists in here, then all it does, it replaces this lower reference to be 
+

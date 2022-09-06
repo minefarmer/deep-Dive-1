@@ -1,0 +1,9 @@
+                IMPORT VARIANTS AND MISCONCEPTIONS
+        Import variants
+
+# module1.py
+import math
+
+
+is math 
+
