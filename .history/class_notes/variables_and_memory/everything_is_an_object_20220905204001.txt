@@ -1,0 +1,16 @@
+                    Everything is an object
+
+Integers (int)
+Booleans (bool)
+Strings (str)
+Lists(list)
+Tuples(tuple)
+Sets(set)
+Dictionaries(dict)
+None(None type)
+
+    Other constructs:
+Operators(+, -, ==, is, ...)
+Functions
+
+

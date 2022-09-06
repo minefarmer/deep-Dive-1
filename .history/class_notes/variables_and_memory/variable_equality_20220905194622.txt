@@ -1,0 +1,33 @@
+                    Variable Equality
+We can think of variable equality in two fundamental ways:
+
+        Memory Address                              Object State (data)
+
+            is                                              ==
+
+        identity operator                           equality operator
+
+        var_1 is var_2                              var_1 == var_2
+
+
+
+Negation    is not                                         !=
+
+        var_1 is not var_2                          var_1  != var_2
+
+        not(var_1 is var_2)                      not(var_1 == var_2)
+
+
+    Examples
+                a = 10              a is b -> true
+                b = a               a == b -> true
+
+
+            a = 'hello'             a is b -> true      # but don't count on it!
+            b = 'hello'             a == b -> true      # but don't count on it!
+
+
+            a = [1, 2, 3]           a is b -> false
+            b = [1, 2, 3]           
+
+
