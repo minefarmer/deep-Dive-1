@@ -1,4 +1,0 @@
-                        Lambda Expressions
-
-            What are Lambda expressions
-

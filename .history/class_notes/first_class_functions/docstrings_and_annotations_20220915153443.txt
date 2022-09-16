@@ -1,0 +1,5 @@
+                    Docstrings and Annotations
+
+We can document our functions (and modules, classes, etc.) to achieve the same result using docstrings   -> PEP 257
+
+If the first line in the function body is a string (not an assignment, not a comment, just a string by itself)

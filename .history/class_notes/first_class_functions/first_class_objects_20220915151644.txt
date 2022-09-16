@@ -1,0 +1,9 @@
+                        First Class Objects
+Can be passed to a function as an argument.
+Can be returned from a function.
+Can be assigned to a variable.
+Can be stored in a data structure (such as a list, tuple, dictionary, etc.)
+
+
+Types such as int, float, string, tuple, list, etc. 
+

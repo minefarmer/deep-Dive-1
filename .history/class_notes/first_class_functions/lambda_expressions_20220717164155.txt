@@ -1,7 +1,0 @@
-                        Lambda Expressions
-
-            What are Lambda expressions?
-
-We already know how to create functions using the def statement.
-
-Lambda expressions arearevsimply another way to create
