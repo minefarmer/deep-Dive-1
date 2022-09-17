@@ -1,0 +1,4 @@
+                    Functions are first-class Objects
+
+They have attributes    __doc__
+

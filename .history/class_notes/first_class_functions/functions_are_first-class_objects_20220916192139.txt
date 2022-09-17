@@ -1,0 +1,104 @@
+                    Functions are first-class Objects
+
+They have attributes    __doc__             __annotations__
+
+We can attach our own attributes.
+
+    def my_func(a, b):
+        return a + b
+
+
+my_func.category = 'math'
+my_func.sub_category = 'arithmetic'
+
+
+print(my_func.category)     -> math
+
+print(my_func.sub_category) -> arithmetic
+
+
+
+            The dir() function
+
+dir() is a built-in function that, given an object as an argument, will return a list of valid attributes for that object.
+
+
+dir(my_func)  # list of the attributes.
+
+
+    Fuction Attributes: __name__, __defaults__, __kwdefaults__, etc.
+
+__name__    -> name of function
+
+__defaults__ -> tuple containing positional parameters defaults
+
+__kwdefaults__ -> tuple containing keyword-only parameter defaults
+    def my_func(a, b=2, c=3, *, kw1, kw2=2):
+        pass
+
+    my_func.__name__ -> name of function
+
+    my_func.__defaults__   -> (2, 3)
+
+    my_func.__kwdefaults  -> {'kw2': 2}
+
+
+        Function Attribute:__code__
+
+def my_func(a, b=1, *args, **kwargs):
+    i = 10
+    b = min(i, b)
+    return a * b        my_func.__code__
+                            -> <code object my_func at 0x00020EEF  ... >
+
+This code object itself has various properties, which include:
+
+co_varnames     parameter and local
+                my_func.__code__.co_varnames    -> ('a, 'b, 'args, 'kwargs', 'i')
+                parameter names first, followed by local variable names.
+
+co_argcount     number of parameters
+                my_func.__code__.co_argcount    -> 2
+                does not count *args and **kwargs
+
+
+
+        The inspect Module          import inspect
+
+ismethod(obj)           isfunction(obj)     isroutine(obj)
+
+
+        The differienc between a function and a method?
+Classes and objects have attributes - an object that is bound (to the class or the object)
+An attribute that is callable is called a method.
+
+def my_func():           func is bound to my_obj, an instance of MyClass
+    pass
+                        isfunction(my_func) -> True
+def MyClass:
+    def func(self):     ismethod(my_func) -> False
+        pass
+                        isfunction(my_obj.func) -> False
+my_obj = MyClass()
+                        ismethod(my_obj.func) -> True
+
+                        isroutine(my_func) -> True
+
+                        isroutine(my_obj.func) -> True
+
+
+
+            Code Introspection
+We can recover the source code of our functions/methods.
+
+inspect.getsource(my_func)  -> I'll get back a string containing my entire def statement, including annotations, docstrings, etc.
+
+
+    I can find out in which module my function was created.
+
+inspect.getmodule(my_func)  -> <module '__main__'>
+
+inspect.getmodule(print)    -> <module 'builtins' (builtin)>
+
+inspect.getmodule(math.sin) -> <module 'math' builtin
+
