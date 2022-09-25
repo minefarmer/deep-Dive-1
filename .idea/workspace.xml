@@ -1,17 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d8ad394c-4f37-45a9-ac4c-efc259bff8ee" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/deep-Dive-1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Changes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Changes/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_12_2022_8_09_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_12_2022_8_09_PM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220718183103.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220718183119.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220718234016.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220720003445.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220720204031.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220721173314.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220721173323.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220721173351.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220721173354.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220721173358.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220721173400.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220721173406.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220721173414.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220721173418.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220721173429.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220721173444.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220721173504.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220722140330.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220722140352.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220722140505.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220722140512.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220724022429.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220724022436.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220724022439.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220724022449.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220724022511.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220724022531.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220724022544.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220724215845.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220724215848.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220724215855.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220724215901.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220724215907.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220724215912.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220724215922.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220725124454.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220727204001.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220727204025.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220727204030.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220728180123.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220729235008.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220730221132.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220730221149.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220731233707.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220731233709.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220731233717.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220731233729.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220731233731.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220731233759.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220731233810.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220731233818.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220731233820.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220731233852.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220806232733.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220807015840.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220808012621.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220810225601.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220812020815.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220812020824.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220812020827.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220812151713.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/index_20220813023347.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_notes/scopes_closures_decorators/decorators/decorator_app_logger_stacked_decorators.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/class_notes/scopes_closures_decorators/decorators/decorator_app_logger_stacked_decorators.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,13 +85,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/carl/Desktop/MatsHub/30-days-of-Python"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/carl/Desktop/MatsHub/30-days-of-Python&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
