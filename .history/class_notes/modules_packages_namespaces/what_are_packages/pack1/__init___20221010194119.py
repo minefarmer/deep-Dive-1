@@ -2,4 +2,3 @@
 print('executing pack...')
 
 value = 'pack1 value'
-import pack1.pack1_1
