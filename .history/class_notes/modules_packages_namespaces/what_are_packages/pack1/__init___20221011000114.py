@@ -1,5 +1,5 @@
 #  packages: pack1: __init__
 print('executing pack...')
 
-value = 'module1 value'
-
+value = 'module11 value'
+import pack1

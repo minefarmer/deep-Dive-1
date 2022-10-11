@@ -2,4 +2,4 @@
 print('executing pack...')
 
 value = 'module1 value'
-
+import pack1
