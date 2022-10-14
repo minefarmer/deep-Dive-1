@@ -1,19 +1,10 @@
 # package imports: main.py
 import common
 import common.validators as validators
-import common.modules as models
+import common.modules as modules
 # from common.modules import *
-import common.helpers as helpers
 
 
-validators.is_boolean('true')
-validators.is_json('{}')
-validators.is_numeric(10)
-validators.is_date('2022-1013')
-
-john_post = models.Post()
-john_posts = models.Posts()
-john = modules.User()
 
 
 print('\n\n***** self *****')

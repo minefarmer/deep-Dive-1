@@ -12,8 +12,7 @@ validators.is_numeric(10)
 validators.is_date('2022-1013')
 
 john_post = models.Post()
-john_posts = models.Posts()
-john = modules.User()
+john_posts = models.Post
 
 
 print('\n\n***** self *****')
