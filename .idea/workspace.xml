@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8ad394c-4f37-45a9-ac4c-efc259bff8ee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/03 - Relevant Python 3.10 Changes.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/zipped_packages/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/class_notes/modules_packages_namespaces/zipped_packages/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="d8ad394c-4f37-45a9-ac4c-efc259bff8ee" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
