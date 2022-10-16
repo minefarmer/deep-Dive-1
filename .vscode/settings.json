@@ -7,5 +7,7 @@
         "**/.DS_Store": false,
         "**/Thumbs.db": false
     },
-    "explorerExclude.backup": null
+    "explorerExclude.backup": null,
+    "editor.fontSize": 10,
+    "terminal.integrated.fontSize": 11
 }
