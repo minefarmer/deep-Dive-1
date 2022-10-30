@@ -1,0 +1,7 @@
+                        First Class Objects
+Can be passed to a function as an argument.
+Can be returned from a function.
+Can be assigned to a function
+
+
+

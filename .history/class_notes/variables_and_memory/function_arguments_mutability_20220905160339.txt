@@ -1,0 +1,8 @@
+                    Function Arguments ad Mutability
+In Python, Strings(str) are immutable objects.
+
+Once a string has been created, the contents of the object can never be changed.
+
+In this code: my_var = 'hello'
+
+

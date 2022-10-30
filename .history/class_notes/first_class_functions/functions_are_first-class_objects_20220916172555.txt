@@ -1,0 +1,38 @@
+                    Functions are first-class Objects
+
+They have attributes    __doc__             __annotations__
+
+We can attach our own attributes.
+
+    def my_func(a, b):
+        return a + b
+
+
+my_func.category = 'math'
+my_func.sub_category = 'arithmetic'
+
+
+print(my_func.category)     -> math
+
+print(my_func.sub_category) -> arithmetic
+
+
+
+            The dir() function
+
+dir() is a built-in function that, given an object as an argument, will return a list of valid attributes for that object.
+
+
+dir(my_func)  # list of the attributes.
+
+
+    Fuction Attributes: __name__, __defaults__, __kwdefaults__, etc.
+
+__name__    -> name of function
+
+__defaults__ -> tuple containing positional parameters defaults
+
+__kwdefaults__ -> tuple containing keyword-only parameter defaults
+    
+
+

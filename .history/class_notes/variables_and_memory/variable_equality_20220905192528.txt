@@ -1,0 +1,11 @@
+                    Variable Equality
+We can think of variable equality in two fundamental ways:
+
+        Memory Address                              Object State (data)
+
+            is                                              ==
+
+        identity operator                           
+
+        var_1 is var_2
+

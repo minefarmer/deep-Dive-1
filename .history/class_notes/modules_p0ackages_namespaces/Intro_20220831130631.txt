@@ -1,0 +1,42 @@
+                    Modules
+
+What are modules exactly?    -> objects of type ModuleType
+
+How does python load modules?
+
+How to import without the import statement.
+
+Reloading modules       -> why we should not do it!
+
+Import modules          -> import
+                           from ... import ...
+                           from import *
+
+
+        __main__        -> 'dunder main'
+
+in modules
+
+as file names
+
+
+        Zip archives
+
+importing from a zip archive
+
+zipping an entire Python add
+
+creating an executibale Python app in bash
+
+
+        Packages
+
+What is a package?
+
+Why use them?
+
+How is it differient from a module?
+
+The role of
+
+

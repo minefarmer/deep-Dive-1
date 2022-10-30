@@ -1,0 +1,20 @@
+                    Docstrings and Annotations
+
+We can document our functions (and modules, classes, etc.) to achieve the same result using docstrings   -> PEP 257
+
+If the first line in the function body is a string (not an assignment, not a comment, just a string by itself), it will be interpreted as a docstring.
+    def my_func(a):
+        "documentation for my_func.     # It is preferred to use triple delimiters.  """ hi """
+        return a
+
+
+            Function annotations
+Function annotations give us an additional way to document our functions:  -> PEP 3107
+
+    Where are annotations stored?
+In the __annotations__ property of the function
+It is a dictionary.
+    Keys are the parameter names.
+        for a return annotation, the key is return
+                                 the values are the annotations
+

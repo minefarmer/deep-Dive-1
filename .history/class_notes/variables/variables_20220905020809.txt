@@ -1,0 +1,7 @@
+                Variables
+memory references
+    what variables really are
+        memory management
+            reference counting  # garbage collection
+                dynamic vs static typing
+

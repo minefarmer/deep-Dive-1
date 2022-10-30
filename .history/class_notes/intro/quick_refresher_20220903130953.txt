@@ -1,0 +1,8 @@
+                Quick Refresher
+
+Python's type hierarchy
+
+variables
+
+conditionals
+

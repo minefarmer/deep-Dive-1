@@ -1,0 +1,5 @@
+                        Reducing Functions in Python
+
+These are functions that recombine an iterable recursively, or folding functions
+
+

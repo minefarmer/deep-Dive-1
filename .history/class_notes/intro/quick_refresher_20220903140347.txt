@@ -1,0 +1,151 @@
+                Quick Refresher
+
+    Python's type hierarchy
+
+variables
+
+conditionals
+
+functions
+
+loops
+
+break, continue and try
+
+classes
+
+
+
+
+    Variables and Memory
+
+what are variables?  -> symbols for memory addresses
+
+memory
+
+Python memory management  -> reference counting, garbage collection
+
+mutability and immutability  -> function arguments, shared references.
+
+what is the equality of two objects?
+
+Python memory optimizations  -> interning, peephole.
+
+
+
+
+    Numeric Types
+
+integers
+
+rationals
+
+floats   -> binary representations      exactness       rounding       equality     measures of closeness, approximate equality
+
+Decimals  -> alternative to floats    exactness    precision    rounding
+
+complex numbers     -> cmath standard library
+
+
+
+
+    Numeric Types - Booleans
+
+associated Truth values     -> every object has one
+
+precedence and short-circuiting
+
+Boolean operators       -> what they really do
+                           using in context of associated truth values
+
+comparison operators    -> identity, value equalities       ordering
+
+
+
+
+    Functions
+
+higher order functions
+
+docstrings and annotations
+
+Lambdas
+
+introspection
+
+functional programming  -> map, filter, zip
+                        -> reducing functions
+                        -> partial functions
+
+
+
+
+    Functions - Arguments
+
+positional arguments
+
+keyword arguments
+
+default values      -> caveats
+
+packing and unpacking
+
+variable positional arguments
+
+
+
+
+    Functions - Scopes and Closures
+
+global and local scopes
+
+nested scopes
+
+closures
+
+nested closures
+
+
+
+
+    Decorators
+
+decorators
+
+nested decorators
+
+parameterized decorators
+
+stacked decorators
+
+class decorators
+
+decorator classes
+
+applicator classes
+
+applications    -> memoization, single dispatch, logging, timing
+
+
+
+
+    Tuples as data structures
+
+tuples are not just read-only lists.
+
+data structures
+
+packing and unpacking
+
+named tuples
+
+augmenting named tuples
+
+
+
+
+    Modules, Packages and Namespaces
+
+what are modules?
+
+what are packages

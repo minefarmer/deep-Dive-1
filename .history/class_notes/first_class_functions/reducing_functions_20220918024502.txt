@@ -1,0 +1,7 @@
+                        Reducing Functions in Python
+
+These are functions that recombine an iterable recursively, or folding functions
+
+Also called accumulators, aggregators, or folding functions.
+
+Example: Finding the maximum value in an iterable.

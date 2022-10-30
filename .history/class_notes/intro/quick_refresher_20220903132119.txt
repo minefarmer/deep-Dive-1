@@ -1,0 +1,28 @@
+                Quick Refresher
+
+    Python's type hierarchy
+
+variables
+
+conditionals
+
+functions
+
+loops
+
+break, continue and try
+
+classes
+
+
+    Variables and Memory
+
+what are variables?  -> symbols for memory addresses
+
+memory
+
+Python memory management  -> reference counting, garbage collection
+
+mutability and immutability  -> function arguments, shared references.
+
+what is the equality of
